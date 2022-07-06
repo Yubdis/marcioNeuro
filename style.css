@@ -10,10 +10,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   
-    align-items: center;
     color: orange;
     font-size: 16px;
     width: 100%;
@@ -29,15 +25,26 @@ nav {
     z-index: 10;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.nav-bar {
+.nav {
     color: darkmagenta;
     background-color: silver;
     align-items: center;
 }
 
 .nav-page {
-    display: inline-block;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
+    padding: .3rem
+}
+
+.nav-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .3rem
 }
 
 a {
@@ -48,17 +55,36 @@ a {
 }
 
 section {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
     width:100vw;
     height: 80vh;
+}
+
+div {
     outline-color: red;   
     outline-style: solid;
     background-color: lightpink;
+    flex-grow: 1;
 }
 
+div .header-container {
+    display: flex;
+    justify-content: flex-end;
+}
 .home-sect {
-    background-color: hsl(120, 100%, 25%);
+    background-color: hsl(124, 32%, 34%);
 }
 
+.bg-theme-color {
+    background-color: hsl(124, 32%, 34%);
+}
 .content-container {
     flex-grow: 1;
+}
+
+img {
+    display: block;
 }

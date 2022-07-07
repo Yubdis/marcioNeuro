@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 65px;
+    scroll-padding-top: 85px;
 }
 
 body {
@@ -114,6 +114,10 @@ nav a:hover {
 }
 
 @media screen and (min-width: 800px) {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 70px;
+    }
     .nav-toggle-label {
         display: none;
     }
@@ -189,15 +193,18 @@ div {
 
 .header-container {
     width: 100%;
+    left: 0;
 }
 .home-sect {
     background-color: hsl(124, 32%, 34%);
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 70px;
 }
 
 .map-sect {
     width: 100%;
+    left: 0;
 }
 
 .bg-theme-color {

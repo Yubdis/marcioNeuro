@@ -13,6 +13,7 @@ body {
     color: orange;
     font-size: 16px;
     width: 100%;
+    padding-top: 4%;
 }
 
 nav {
@@ -32,17 +33,13 @@ nav {
 }
 
 .nav-page {
-    display: block;
-    flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
     padding: .3rem
 }
 
 .nav-section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: flex-end;
     padding: .3rem
 }
@@ -59,13 +56,14 @@ section {
     flex-direction: column;  
     justify-content: center;
     align-items: center;
+    left: 0;
     width:100vw;
-    height: 80vh;
+    height: auto;
 }
 
 div {
-    outline-color: red;   
-    outline-style: solid;
+     /* colors to help troubleshoot  */
+    outline: 3px solid red;
     background-color: lightpink;
     flex-grow: 1;
 }
@@ -76,6 +74,8 @@ div .header-container {
 }
 .home-sect {
     background-color: hsl(124, 32%, 34%);
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .bg-theme-color {
@@ -85,6 +85,9 @@ div .header-container {
     flex-grow: 1;
 }
 
+/* need to figure out max sizing for img */
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }

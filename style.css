@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 30px;
 }
 
 body {
@@ -16,41 +17,154 @@ body {
     padding-top: 4%;
 }
 
-nav {
-    display: flex;
+header {
+    background-color: silver;
+    text-align: center;
+    color: darkmagenta;
     position: fixed;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
     width: 100%;
     z-index: 10;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.nav {
-    color: darkmagenta;
-    background-color: silver;
-    align-items: center;
+
+.nav-toggle {
+    display: none;
 }
 
-.nav-page {
-    justify-content: flex-start;
-    padding: .3rem
-}
-
-.nav-section {
+.nav-toggle-label {
+    position:absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: .3rem
+    align-items: center;
+    margin-left: 1em;
 }
 
-a {
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: rgb(198, 131, 8);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    background: silver;
+    text-align: left;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+nav a {
     text-decoration: none;
-    display: inline-block;
-    margin: 0.3rem;
     color: darkmagenta;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
+nav a:hover {
+    color: rgb(197, 131, 10);
+}
+
+.nav-toggle:checked ~ nav {
+   transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 275ms;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / span 1;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        bottom: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+}
 section {
     display: flex;
     flex-direction: column;  
@@ -81,13 +195,14 @@ div .header-container {
 .bg-theme-color {
     background-color: hsl(124, 32%, 34%);
 }
-.content-container {
+.content-container-large {
+    width: 100%;
     flex-grow: 1;
 }
 
 /* need to figure out max sizing for img */
 img {
     display: block;
-    width: 100%;
+    max-width: 85%;
     height: auto;
 }

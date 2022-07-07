@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 85px;
+    scroll-padding-top: 5em;
 }
 
 body {
@@ -72,7 +72,7 @@ header {
 
 nav {
     position: absolute;
-    background-color: hsl(124, 32%, 34%);
+    background-color: hsla(124, 32%, 34%, 0.8);
     text-align: left;
     top: 100%;
     width: 100%;
@@ -113,10 +113,10 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 275ms;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 640px) {
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 70px;
+        scroll-padding-top: 5rem;
     }
     .nav-toggle-label {
         display: none;
@@ -124,7 +124,7 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(450, 2fr) 1fr;
     }
 
     .logo {
@@ -142,6 +142,7 @@ nav a:hover {
     nav a {
         opacity: 1;
         position: relative;
+        padding-right: .5rem;
     }
 
     nav a::before {
@@ -186,11 +187,12 @@ section {
 
 div {
      /* colors to help troubleshoot  */
-    outline: 3px solid red;
-    background-color: lightpink;
     flex-grow: 1;
 }
 
+.title {
+    text-align: center;
+}
 .header-container {
     width: 100%;
     left: 0;
@@ -199,12 +201,29 @@ div {
     background-color: hsl(124, 32%, 34%);
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 45px;
 }
 
+@media screen and (min-width: 640px) {
+    .home-sect {
+        margin-top: .5rem;
+    }
+}
+
+.about-sect {
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+.contact-sect {
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
 .map-sect {
     width: 100%;
     left: 0;
+    text-align: center;
 }
 
 .bg-theme-color {

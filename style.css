@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 30px;
+    scroll-padding-top: 65px;
 }
 
 body {
@@ -15,12 +15,14 @@ body {
     font-size: 16px;
     width: 100%;
     padding-top: 4%;
+    font-weight: 400;
 }
 
+/* begin nav bar */
+
 header {
-    background-color: silver;
     text-align: center;
-    color: darkmagenta;
+    color: orange;
     position: fixed;
     top:0;
     left:0;
@@ -47,7 +49,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: rgb(198, 131, 8);
+    background: orange;
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -70,7 +72,7 @@ header {
 
 nav {
     position: absolute;
-    background: silver;
+    background-color: hsl(124, 32%, 34%);
     text-align: left;
     top: 100%;
     width: 100%;
@@ -92,14 +94,14 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color: darkmagenta;
+    color: orange;
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
-    color: rgb(197, 131, 10);
+    color: white;
 }
 
 .nav-toggle:checked ~ nav {
@@ -142,7 +144,7 @@ nav a:hover {
         content: '';
         display: block;
         height: 5px;
-        background: black;
+        background: orangered;
         position: absolute;
         bottom: -.75em;
         left: 0;
@@ -165,6 +167,9 @@ nav a:hover {
         margin-bottom: 0;
     }
 }
+
+/* begin main styling */
+
 section {
     display: flex;
     flex-direction: column;  
@@ -182,9 +187,8 @@ div {
     flex-grow: 1;
 }
 
-div .header-container {
-    display: flex;
-    justify-content: flex-end;
+.header-container {
+    width: 100%;
 }
 .home-sect {
     background-color: hsl(124, 32%, 34%);
@@ -192,13 +196,19 @@ div .header-container {
     justify-content: space-between;
 }
 
+.map-sect {
+    width: 100%;
+}
+
 .bg-theme-color {
     background-color: hsl(124, 32%, 34%);
 }
+
 .content-container-large {
     width: 100%;
     flex-grow: 1;
 }
+
 
 /* need to figure out max sizing for img */
 img {

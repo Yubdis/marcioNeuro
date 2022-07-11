@@ -195,8 +195,10 @@ form {
 }
 div {
      /* colors to help troubleshoot  */
-    background-color: pink;
-    outline: 3px solid red;
+    /* background-color: pink;
+    outline: 3px solid red; */
+    margin: 0;
+    padding: 0;
 }
 
 .title {
@@ -210,9 +212,25 @@ div {
     margin-top: 45px;
 }
 
+/* styling for larger screens */
 @media screen and (min-width: 640px) {
     .home-sect {
         margin-top: .5rem;
+        justify-content: space-evenly;
+    }
+
+    .content-container-image {
+        padding: 1.5rem;
+    }
+
+    .content-container-contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0.8rem;
+        color:  rgb(139, 0, 139);
+    
     }
 }
 
@@ -250,11 +268,11 @@ div {
 
 .content-container-contact-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
-    text-align: left;
+    text-align: flex-start;
     padding: 0.5rem;
-    color: rgb(56, 56, 218)
+    color:  rgb(139, 0, 139);
 
 }
 

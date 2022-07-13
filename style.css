@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+::root {
+    --primary-clr: hsl(124, 32%, 34%);
+    --secondary-clr: hsl(39, 100%, 50%);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 5em;

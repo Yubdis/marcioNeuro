@@ -1,3 +1,8 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
+
+
 /* box-sizing and font sizing */
 *,
 *::before,
@@ -199,6 +204,14 @@ section {
     height: auto;
 }
 
+div {
+     /* colors to help troubleshoot  */
+    /* background-color: pink;
+    outline: 3px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -212,17 +225,16 @@ button {
     cursor: pointer;
 }
 
-div {
-     /* colors to help troubleshoot  */
-    background-color: pink;
-    outline: 3px solid red;
-    margin: 0;
-    padding: 0;
+.info-container {
+    padding: 2.5rem;
+    margin: auto;
+    color: var(--accent-clr-prp);
 }
 
-.info-container {
-    padding: 0%;
-    margin: 0%;
+.video-container {
+    padding: 2.5rem;
+    margin: auto;
+    color: var(--accent-clr-prp);
 }
 .title {
     text-align: center;
@@ -235,39 +247,21 @@ div {
     margin-top: 45px;
 }
 
-/* styling for larger screens */
-@media screen and (min-width: 640px) {
-    .home-sect {
-        margin-top: .5rem;
-        justify-content: space-evenly;
-    }
-
-    .content-container-image {
-        padding: 1.5rem;
-    }
-
-    .content-container-contact-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding: 0.8rem;
-        color:  var(--accent-clr-prp);
-    
-    }
-}
 
 .about-sect {
     width: 100%;
     left: 0;
     text-align: center;
 }
+
+/* not sure why I can't get this background image to work */
 .contact-sect {
     width: 100%;
     left: 0;
     text-align: center;
-    
+    /* background-image: url("pictures\stethoscope.jpg"); */
 }
+
 .map-sect {
     width: 100%;
     left: 0;
@@ -280,29 +274,46 @@ div {
 
 .header-container {
     background-color: var(--primary-clr);
+    color: var(--accent-clr-ylw);
     width: 100%;
     left: 0;
 }
 
-.content-container-map {
-    width: 100%;
-    flex-grow: 1;
+.content-container {
+    padding: 1.5rem;
+    color: var(--secondary-clr);
 }
 
+.content-container-map {
+    width: 100%;
+}
+
+.content-container-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 .content-container-contact-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    text-align: flex-start;
+    text-align: left;
     padding: 0.5rem;
+    margin-left: 2rem;
     color:  var(--accent-clr-prp);
-
+    flex-grow: 1;
+    width: 40%;
+    
 }
 
 .content-container-email-form {
-    padding: 2rem;
-    justify-content: center;
+    width: 60%;
+    justify-content: flex-start;
     align-items: center;
+    flex-grow: 1;
+
 }
 
 .form-header {
@@ -315,6 +326,48 @@ div {
     color:rgba(198, 200, 213, 0.953);
     font-weight: 600;
     background-color: var(--accent-clr-prp);
+}
+
+/*  =======================================
+        styling for larger screens 
+    =======================================*/
+
+@media screen and (min-width: 640px) {
+    .home-sect {
+        margin-top: .5rem;
+        justify-content: space-evenly;
+    }
+
+    .content-container-image {
+        padding: 1.5rem;
+    }
+
+    .content-container-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;   
+    }
+
+    .content-container-contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0.5rem;
+        margin-left: 1.6rem;
+        color:  var(--accent-clr-prp);
+        flex-grow: 1;
+        width: 30%;
+    }
+
+    .content-container-email-form {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    
+    }
 }
 
 /* need to figure out max sizing for img */

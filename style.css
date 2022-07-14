@@ -23,9 +23,13 @@ body {
     width: 100%;
     padding-top: 4%;
     font-weight: 400;
+    left: 0;
+    margin: 0;
 }
 
-/* begin nav bar */
+/*  =======================================================
+                    begin nav bar 
+    ======================================================= */
 
 header {
     text-align: center;
@@ -49,7 +53,7 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    margin-left: 1em;
+    margin-left: 1rem;
 }
 
 .nav-toggle-label span,
@@ -70,16 +74,16 @@ header {
 }
 
 .nav-toggle-label span::before {
-    bottom: 7px;
+    bottom: 8px;
 }
 
 .nav-toggle-label span::after {
-    top: 7px;
+    top: 8px;
 }
 
 nav {
     position: absolute;
-    background-color: var(--primary-clr);
+    background-color: #01783fd0;
     text-align: left;
     top: 100%;
     width: 100%;
@@ -131,16 +135,16 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(450, 2fr) 1fr;
+        grid-template-columns: 1fr auto minmax(450, 2fr) 2fr;
     }
 
     .logo {
-        grid-column: 2 / span 1;
+        grid-column: 1;
     }
 
     nav {
         all: unset;
-        grid-column: 3 / 4;
+        grid-column: 2;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -149,7 +153,8 @@ nav a:hover {
     nav a {
         opacity: 1;
         position: relative;
-        padding-right: .5rem;
+        padding-right: .1rem;
+        margin-right: .3rem;
     }
 
     nav a::before {
@@ -175,12 +180,14 @@ nav a:hover {
     }
 
     nav li {
-        margin-left: 3em;
+        margin-left: 1rem;
         margin-bottom: 0;
     }
 }
 
-/* begin main styling */
+/*  ==============================================
+                    begin main styling 
+    ==============================================  */
 
 section {
     display: flex;
@@ -188,7 +195,7 @@ section {
     justify-content: center;
     align-items: center;
     left: 0;
-    width:100vw;
+    width:100%;
     height: auto;
 }
 
@@ -207,12 +214,16 @@ button {
 
 div {
      /* colors to help troubleshoot  */
-    /* background-color: pink;
-    outline: 3px solid red; */
+    background-color: pink;
+    outline: 3px solid red;
     margin: 0;
     padding: 0;
 }
 
+.info-container {
+    padding: 0%;
+    margin: 0%;
+}
 .title {
     text-align: center;
 }
@@ -295,7 +306,9 @@ div {
 }
 
 .form-header {
-    color: darkorchid
+    color: darkorchid;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .form-btn {

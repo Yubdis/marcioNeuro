@@ -15,6 +15,18 @@
     --secondary-clr: #fe5c2b;
     --accent-clr-prp: #572af5;
     --accent-clr-ylw: #fcf22e;
+    --bg-gradient-clr: linear-gradient(
+        130deg,
+        #01783f,
+        #19b067,
+        #62cb1b,
+        #9fce14,
+        #d4e917,
+        #fcf22e,
+        #f09f25,
+        #fc950f,
+        #fe5c2b
+        );
 }
 
 html {
@@ -129,6 +141,9 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 275ms;
 }
 
+/*  ============================================
+            navbar for larger screens 
+    ============================================*/
 @media screen and (min-width: 640px) {
     html {
         scroll-behavior: smooth;
@@ -225,6 +240,11 @@ button {
     cursor: pointer;
 }
 
+button:hover,
+button:focus {
+    background-color: darkgoldenrod;
+
+}
 .info-container {
     padding: 2.5rem;
     margin: auto;
@@ -249,9 +269,22 @@ button {
 
 
 .about-sect {
+    background-image: var(--bg-gradient-clr);
+    background-size: 400%;
+    background-position: left;
     width: 100%;
     left: 0;
     text-align: center;
+    animation: bg-animation 45s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
 
 /* not sure why I can't get this background image to work */
@@ -281,7 +314,7 @@ button {
 
 .content-container {
     padding: 1.5rem;
-    color: var(--secondary-clr);
+    color: var(--accent-clr-prp);
 }
 
 .content-container-map {

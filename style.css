@@ -204,6 +204,8 @@ nav a:hover {
         margin-bottom: 0;
     }
 }
+/*  =============== end navbar ===================  */
+
 
 /*  ==============================================
                     begin main styling 
@@ -243,6 +245,7 @@ button {
 button:hover,
 button:focus {
     background-color: darkgoldenrod;
+    transition: 350ms;
 
 }
 .info-container {
@@ -263,7 +266,7 @@ button:focus {
 .home-sect {
     background-color: var(--primary-clr);
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 45px;
 }
 
@@ -310,6 +313,10 @@ button:focus {
     color: var(--accent-clr-ylw);
     width: 100%;
     left: 0;
+}
+
+.content-container-image {
+    padding: 1.5rem;
 }
 
 .content-container {
@@ -372,7 +379,7 @@ button:focus {
     }
 
     .content-container-image {
-        padding: 1.5rem;
+        margin-top: 2rem;
     }
 
     .content-container-info {
@@ -403,7 +410,6 @@ button:focus {
     }
 }
 
-/* need to figure out max sizing for img */
 img {
     display: block;
     max-width: 85%;

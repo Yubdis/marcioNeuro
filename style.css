@@ -1,7 +1,7 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
-
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
 /* box-sizing and font sizing */
 *,
@@ -27,6 +27,7 @@
         #fc950f,
         #fe5c2b
         );
+    --ff-PT-: 'PT Serif', serif;
 }
 
 html {
@@ -37,6 +38,7 @@ html {
 body {
     color: var(--accent-clr-ylw);
     font-size: 16px;
+    font-family: var(--ff-PT-);
     width: 100%;
     padding-top: 4%;
     font-weight: 400;
@@ -265,6 +267,7 @@ button:focus {
 
 .home-sect {
     background-color: var(--primary-clr);
+    background-image: url("pictures\stethoscope.jpg");
     flex-direction: row-reverse;
     justify-content: space-evenly;
     margin-top: 45px;
@@ -278,7 +281,7 @@ button:focus {
     width: 100%;
     left: 0;
     text-align: center;
-    animation: bg-animation 45s infinite alternate;
+    /* animation: bg-animation 60s infinite alternate; */
 }
 
 @keyframes bg-animation {
@@ -295,7 +298,6 @@ button:focus {
     width: 100%;
     left: 0;
     text-align: center;
-    /* background-image: url("pictures\stethoscope.jpg"); */
 }
 
 .map-sect {
@@ -321,11 +323,12 @@ button:focus {
 
 .content-container {
     padding: 1.5rem;
-    color: var(--accent-clr-prp);
+    color: whitesmoke;
 }
 
 .content-container-map {
-    width: 100%;
+    width: 80%;
+    color: black;
 }
 
 .content-container-info {
@@ -358,6 +361,8 @@ button:focus {
 
 .form-header {
     color: darkorchid;
+    margin: 0;
+    padding-bottom: 1.5rem;;
     font-weight: 700;
     font-size: 1.5rem;
 }

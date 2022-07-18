@@ -15,10 +15,8 @@
                 <ul class="nav-section">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre</</li>
-                    <!-- add especialidades section -->
-                    <li><a href="sabemais.html" >Especialidades</a></li>
-                    <!-- make consistency changes for names/links -->
-                    <li><a href="formacao.html" >Pesquisa</a></li>
+                    <li><a href="#especialidades" >Especialidades</a></li>
+                    <li><a href="#pesquisa">Pesquisa</a></li>
                     <li><a href="#map">Endereco</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
@@ -30,7 +28,7 @@
         <main>
             <section id="home" class="home-sect">
                 <div class="header-container">
-                    <h2 class="title">NEUROLOGISTA<br>PESQUISADOR</h2>
+                    <h2>NEUROLOGISTA</h2>
                 </div>
                 <div class="content-container-image">
                     <img src="pictures\marcioNeurojpg.jpg">
@@ -57,6 +55,44 @@
                     <image src="pictures\marcio.jpeg" class="profile-pic"></image>
                 </div>
             </section>
+            <section id="especialidades" class="especialidades-sect">
+                <div class="header-container">
+                    <h2>Especialidades</h2>
+                </div>
+                <div class="content-container-especialidades">
+                    <div><p>Parkinson’s</p></div>
+                    <div><p>Alzheimer</p></div>
+                    
+                </div>
+
+            </section>
+            <section id="pesquisa" class="pesquisa-sect">
+                <div class="header-container">
+                    <h2>Pesquisa</h2>
+                </div>
+                <div class="info-container">
+                    <h2>Minha formação</h2>
+                    <div>
+                        <h3>Curriculo Lattes</h3>
+                        <a href="http://lattes.cnpq.br/5325140856128792">CV</a>
+                
+                    </div>
+                    <div>
+                        <h3>Artigos Cientificos</h3>
+                        <ul>
+                            <li><a href="https://www.futuremedicine.com/doi/abs/10.2217/pgs.15.23">
+                                Is there a role for ADORA2A polymorphisms in levodopa-induced dyskinesia in Parkinson's disease patients?</a></li> 
+                            <li><a href="https://link.springer.com/article/10.1186/s12940-020-00624-8">
+                                Occupational pesticide exposure and the risk of death in patients with Parkinson’s disease: an observational study in southern Brazil</a></li>   
+                            <li><a href="https://www.frontiersin.org/articles/10.3389/fneur.2021.619535/full">
+                                A Case–Control Study of the Effects of Chimarrão (Ilex paraguariensis) and Coffee on Parkinson's Disease</a> </li>   
+                            <li><a href="https://www.karger.com/Article/Abstract/510518">
+                                SMART Syndrome Identification and Successful Treatment</a> </li>   
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
             <section id="map" class="map-sect">
                 <div class="header-container bg-theme-color"">
                     <h2><i class="fi fi-rr-marker"></i></h2>
@@ -74,20 +110,19 @@
                 <div class="content-container-info">
                      <div class="content-container-contact-info">
                         <i class="fi fi-brands-instagram"> márcio.neuro</i>
-                        <!-- change phone icon -->
-                        <i class="fi fi-brands-whatsapp"> (51) 3332-5983</i>
+                        <i class="fi fi-sr-phone-call"> (51) 3332-5983</i>
                         <i class="fi fi-brands-facebook"> Dr. Márcio</i>
                     </div>
                     <div class="content-container-email-form">
                         <p>Segunda: 8h-13h, Terca 8h-13h, Quinta 8h-13h</p>
                         <form action="https://formsubmit.co/d0bc3582c7ac9533a7d1492905b1a49f" method="POST">
                             <h3 class="form-header">Formulário para contato</h3>
-                            <input type="text" name="name" id="name" placeholder="Your Name*" required>
-                            <input type="text" name="email" id="email" placeholder="Your Email*" required>
+                            <input type="text" name="name" id="name" placeholder="Seu Nome*" required>
+                            <input type="text" name="email" id="email" placeholder="Seu Email*" required>
                             <input type="hidden" name="_subject" value="New Website message!">
                             <input type="hidden" name="_autoresponse" value="Thank you for your message! I'll respond as soon as I can!">
-                            <textarea name="message" id="message" placeholder="Your Message" rows="6"></textarea>
-                            <button class="form-btn" type="submit">Send</button>
+                            <textarea name="message" id="message" placeholder="Seu mensagem" rows="6"></textarea>
+                            <button class="form-btn" type="submit">Enviar</button>
                         </form>
                     </div>   
                 </div>

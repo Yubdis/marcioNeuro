@@ -2,6 +2,7 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 /* box-sizing and font sizing */
 *,
@@ -28,6 +29,7 @@
         #fe5c2b
         );
     --ff-PT-: 'PT Serif', serif;
+    --ff-Raleway-: 'Raleway', sans-serif;
 }
 
 html {
@@ -37,8 +39,8 @@ html {
 
 body {
     color: var(--accent-clr-ylw);
-    font-size: 16px;
-    font-family: var(--ff-PT-);
+    font-size: 20px;
+    font-family: var(--ff-Raleway-);
     width: 100%;
     padding-top: 4%;
     font-weight: 400;
@@ -53,6 +55,7 @@ body {
 header {
     text-align: center;
     color: var(--accent-clr-ylw);
+    font-family: var(--ff-PT-);
     position: fixed;
     top:0;
     left:0;
@@ -160,10 +163,6 @@ nav a:hover {
         grid-template-columns: 1fr auto minmax(450, 2fr) 2fr;
     }
 
-    .logo {
-        grid-column: 1;
-    }
-
     nav {
         all: unset;
         grid-column: 2;
@@ -250,6 +249,7 @@ button:focus {
     transition: 350ms;
 
 }
+
 .info-container {
     padding: 2.5rem;
     margin: auto;
@@ -263,6 +263,7 @@ button:focus {
 }
 .title {
     text-align: center;
+    font-family: var(--ff-Raleway-);
 }
 
 .home-sect {
@@ -324,6 +325,13 @@ button:focus {
 .content-container {
     padding: 1.5rem;
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-pic {
+    height: 200px;
 }
 
 .content-container-map {

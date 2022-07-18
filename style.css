@@ -149,7 +149,7 @@ nav a:hover {
 @media screen and (min-width: 640px) {
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 5rem;
+        scroll-padding-top: 3.5rem;
     }
     .nav-toggle-label {
         display: none;
@@ -158,6 +158,8 @@ nav a:hover {
     header {
         display: grid;
         grid-template-columns: 1fr auto minmax(450, 2fr) 2fr;
+        margin-top: 0;
+        padding: .5rem;
     }
 
     nav {
@@ -265,13 +267,17 @@ button:focus {
 
 .home-sect {
     background-color: var(--primary-clr);
-    background-image: url("pictures\stethoscope.jpg");
     flex-direction: row-reverse;
     justify-content: space-evenly;
     padding: 2rem;
     margin-top: 0;
 }
 
+/* need to figure out background images
+    .bg-img {
+    background-image: url("pictures\stethoscope.jpg");
+    padding: 100px;
+} */
 
 .about-sect {
     background-image: var(--bg-gradient-clr);
@@ -282,14 +288,42 @@ button:focus {
     text-align: center;
 }
 
-@keyframes bg-animation {
-    0% {
-        background-position: left;
-    }
-    100% {
-        background-position: right;
-    }
+.container-sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+.content-text {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    color: whitesmoke;
+    padding: 1rem;
+    width: 100%;
+}
+
+.content-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    width: 65%;
+}
+
+img {
+    max-width: 85%;
+    min-width: 150px;
+}
+
+/* img .profile-pic {
+    height:auto;
+} */
 
 /* not sure why I can't get this background image to work */
 .contact-sect {
@@ -317,7 +351,7 @@ button:focus {
 }
 
 .content-container-image {
-    padding: 1.5rem;
+    margin-top: 2rem;
 }
 
 .content-container {
@@ -328,9 +362,6 @@ button:focus {
     justify-content: center;
 }
 
-.profile-pic {
-    height: 200px;
-}
 
 .content-container-map {
     width: 80%;
@@ -392,6 +423,33 @@ button:focus {
         margin-top: 2rem;
     }
 
+    .container-sobre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .content-text {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+        color: whitesmoke;
+        padding: 1rem;
+        width: 60%
+    }
+    
+    .content-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem;
+        width: 40%;
+    }
     .content-container-info {
         width: 100%;
         display: flex;
@@ -418,10 +476,4 @@ button:focus {
         flex-grow: 1;
     
     }
-}
-
-img {
-    display: flex;
-    max-width: 85%;
-    height: auto;
 }

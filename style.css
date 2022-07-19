@@ -50,6 +50,7 @@ body {
 
 header {
     text-align: center;
+    background-color: var(--primary-clr);
     color: var(--accent-clr-ylw);
     font-family: var(--ff-PT-);
     position: fixed;
@@ -211,6 +212,8 @@ nav a:hover {
                     begin main styling 
     ==============================================  */
 
+    /* =====    general styling     ===== */
+
 section {
     display: flex;
     flex-direction: column;  
@@ -222,9 +225,6 @@ section {
 }
 
 div {
-     /* colors to help troubleshoot  */
-    /* background-color: pink;
-    outline: 3px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -235,7 +235,6 @@ form {
     padding: 2rem;
     font-weight: 300;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 button {
@@ -246,24 +245,39 @@ button:hover,
 button:focus {
     background-color: darkgoldenrod;
     transition: 350ms;
-
 }
 
-.info-container {
-    padding: 2.5rem;
-    margin: auto;
-    color: var(--accent-clr-prp);
-}
-
-.video-container {
-    padding: 2.5rem;
-    margin: auto;
-    color: var(--accent-clr-prp);
-}
 .title {
-    text-align: center;
-    font-family: var(--ff-Raleway-);
+    padding: 2rem;
 }
+
+img {
+    max-width: 75%;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.header-container {
+    background-color: var(--primary-clr);
+    color: var(--accent-clr-ylw);
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.content-container-image {
+    margin-top: 2rem;
+}
+
+.content-container {
+    padding: 1.5rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ========     home section    ======== */
 
 .home-sect {
     background-color: var(--primary-clr);
@@ -273,11 +287,7 @@ button:focus {
     margin-top: 0;
 }
 
-/* need to figure out background images
-    .bg-img {
-    background-image: url("pictures\stethoscope.jpg");
-    padding: 100px;
-} */
+/*  ========    about section   ========     */
 
 .about-sect {
     background-image: var(--bg-gradient-clr);
@@ -317,56 +327,13 @@ button:focus {
     width: 65%;
 }
 
-img {
-    max-width: 85%;
-    min-width: 150px;
-}
-
-/* img .profile-pic {
-    height:auto;
-} */
+/* ========     contact section     ======== */
 
 /* not sure why I can't get this background image to work */
 .contact-sect {
     width: 100%;
     left: 0;
     text-align: center;
-}
-
-.map-sect {
-    width: 100%;
-    left: 0;
-    text-align: center;
-}
-
-.bg-theme-color {
-    background-color: var(--primary-clr);
-}
-
-.header-container {
-    background-color: var(--primary-clr);
-    color: var(--accent-clr-ylw);
-    width: 100%;
-    left: 0;
-    text-align: center;
-}
-
-.content-container-image {
-    margin-top: 2rem;
-}
-
-.content-container {
-    padding: 1.5rem;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.content-container-map {
-    width: 80%;
-    color: black;
 }
 
 .content-container-info {
@@ -387,7 +354,6 @@ img {
     color:  var(--accent-clr-prp);
     flex-grow: 1;
     width: 40%;
-    
 }
 
 .content-container-email-form {
@@ -395,7 +361,6 @@ img {
     justify-content: flex-start;
     align-items: center;
     flex-grow: 1;
-
 }
 
 .form-header {
@@ -412,6 +377,21 @@ img {
     background-color: var(--accent-clr-prp);
 }
 
+/* ========     map section     ======== */
+
+.map-sect {
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.content-container-map {
+    width: 80%;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+
 /*  =======================================
         styling for larger screens 
     =======================================*/
@@ -425,6 +405,9 @@ img {
         margin-top: 2rem;
     }
 
+    .title {
+        padding: .7rem;
+    }
     .container-sobre {
         display: flex;
         flex-direction: row;

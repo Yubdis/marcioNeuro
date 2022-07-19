@@ -254,6 +254,9 @@ button:focus {
 img {
     max-width: 75%;
     min-width: 150px;
+}
+
+.profile-pic {
     border-radius: 10px;
 }
 
@@ -325,6 +328,81 @@ img {
     align-items: center;
     margin: 1rem;
     width: 65%;
+}
+
+/* ========     especialidades section      ======== */
+
+.content-container-especialidades {
+    display: flex;
+}
+
+.card {
+    position: relative;
+    margin: 1em;
+    background-color: lightseagreen;
+}
+
+.card-image {
+    max-width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+    opacity: 1;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.card:hover .card-image {
+    opacity: 0.4;
+}
+
+.card::before,
+.card::after,
+.card:focus {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+}
+
+.card::before {
+    transform: scale(0, 1);
+    transition: transform ease-out 250ms;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.card:hover::before {
+    transform: scale(1, 1);
+}
+
+.card::after {
+    transform: scale(1, 0);
+    transition: transform ease-out 250ms;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+}
+
+.card:hover::after {
+    transform: scale(1, 1);
 }
 
 /* ========     contact section     ======== */

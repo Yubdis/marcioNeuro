@@ -248,7 +248,7 @@ button:focus {
 }
 
 .title {
-    padding: 2rem;
+    font-size: 1.4rem;
 }
 
 img {
@@ -396,7 +396,6 @@ img {
 
 /* ========     contact section     ======== */
 
-/* not sure why I can't get this background image to work */
 .contact-sect {
     width: 100%;
     left: 0;
@@ -458,6 +457,13 @@ img {
     margin-bottom: 1rem;
 }
 
+.alzheimers-sect {
+    display: flex;
+    margin-top: 7rem;
+    scroll-padding-top: 5rem;
+    scroll-margin-top: 5rem;
+    
+}
 
 /*  =======================================
         styling for larger screens 
@@ -478,7 +484,7 @@ img {
     .container-sobre {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 100%;
     }
     
@@ -490,7 +496,7 @@ img {
         align-items: flex-start;
         text-align: left;
         color: whitesmoke;
-        padding: 1rem;
+        padding: 2rem;
         width: 60%
     }
     
@@ -511,7 +517,7 @@ img {
     
     .card {
         position: relative;
-        margin: 1.5rem;
+        margin: .8rem;
         background-color: lightseagreen;
     
     }
@@ -519,7 +525,7 @@ img {
     .card-image {
         max-width: 100%;
         display: block;
-        transition: opacity ease-out 250ms;
+        transition: opacity ease-out 350ms;
         opacity: 1;
     }
     
@@ -530,7 +536,7 @@ img {
         transform: translate(-50%, -50%);
         color: whitesmoke;
         opacity: 0;
-        transition: opacity ease-out 250ms;
+        transition: opacity ease-out 350ms;
     }
     
     .card:hover .card-text {

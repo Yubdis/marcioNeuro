@@ -256,6 +256,10 @@ img {
     min-width: 150px;
 }
 
+.banner {
+    max-width: 100%;
+}
+
 .profile-pic {
     border-radius: 10px;
 }
@@ -269,6 +273,8 @@ img {
 }
 
 .content-container-image {
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
 }
 

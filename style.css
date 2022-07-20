@@ -334,12 +334,14 @@ img {
 
 .content-container-especialidades {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .card {
     position: relative;
     margin: 1em;
     background-color: lightseagreen;
+    width: 33%;
 }
 
 .card-image {
@@ -347,6 +349,11 @@ img {
     display: block;
     transition: opacity ease-out 250ms;
     opacity: 1;
+}
+
+/* needs some tweaking */
+.card:nth-child(2) {
+    padding-top: 4rem;
 }
 
 .card-text {

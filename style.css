@@ -520,7 +520,7 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
@@ -528,11 +528,12 @@ footer {
 
 .footer-address {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     justify-content: flex-start;
-    align-items: center;
-    margin: 1rem;
-    padding: .4rem;
+    align-items: flex-start;
+    margin: .5rem;
+    padding: .3rem;
 
 }
 
@@ -541,7 +542,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     margin: .2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 100%;
 }
 
@@ -560,7 +561,7 @@ h4 {
                 Parkinson page
 ===========================================*/
 .alzheimers-sect{
-    
+
 }
 /* ========================================
                 Alzheimer page
@@ -743,14 +744,15 @@ h4 {
         display: flex;
         flex-grow: 1;
         justify-content: space-around;
-        align-items: center;
+        align-items: left;
         width: 100%
     }
     
     .footer-links {
         margin: .2rem;
         font-size: 2.3rem;
-        justify-content: space-evenly;
-        flex-shrink: 3;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-shrink: 2;
     }
 }

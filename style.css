@@ -401,6 +401,37 @@ img {
     border-right: 1px solid whitesmoke;
 }
 
+/* ========     pesquisa section    ======== */
+
+.pesquisa-sect {
+    color: var(--secondary-clr);
+    text-align: left;
+}
+
+.artigos {
+    margin: 2rem;
+}
+
+div a {
+    text-decoration: none;
+    color: var(--secondary-clr)
+}
+
+div li {
+    padding: .5rem;
+}
+
+.cv {
+    margin: 2rem;
+    text-align: left;
+}
+
+div a:hover {
+    color: var(--accent-clr-prp);
+    font-weight: 600;
+    transition: ease-out 75ms;
+}
+
 /* ========     contact section     ======== */
 
 .contact-sect {

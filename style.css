@@ -229,10 +229,15 @@ div {
     padding: 0;
 }
 
+div ul li {
+    list-style: none;    
+}
+
 form {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1.5rem;
+    margin: 0;
     font-weight: 300;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -426,7 +431,8 @@ div li {
     text-align: left;
 }
 
-div a:hover {
+div a:hover,
+div a:focus {
     color: var(--accent-clr-prp);
     font-weight: 600;
     transition: ease-out 75ms;
@@ -457,20 +463,20 @@ div a:hover {
     margin-left: 2rem;
     color:  var(--accent-clr-prp);
     flex-grow: 1;
+    flex-shrink: 1.5;
     width: 40%;
 }
 
 .content-container-email-form {
-    width: 60%;
-    justify-content: flex-start;
-    align-items: center;
-    flex-grow: 1;
+    width: 100%;
 }
 
+.email-form {
+    margin-bottom: 0;
+}
 .form-header {
     color: darkorchid;
-    margin: 0;
-    padding-bottom: 1.5rem;;
+    margin-top: 0;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -665,7 +671,8 @@ h4 {
         border-right: 1px solid whitesmoke;
     }
     
-    .card:hover::after {
+    .card:hover::after,
+    .card:focus::after  {
         transform: scale(1, 1);
     }
 

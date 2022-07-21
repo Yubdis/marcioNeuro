@@ -555,6 +555,26 @@ h4 {
     margin: 0;
     padding: 0;
 } 
+
+/* ========================================
+                Parkinson page
+===========================================*/
+.alzheimers-sect{
+    
+}
+/* ========================================
+                Alzheimer page
+===========================================*/
+.alzheimers-sect {
+
+}
+/* ========================================
+                Botulinica page
+===========================================*/
+.botulinica-sect {
+
+}
+
 /*  =======================================
         styling for larger screens 
     =======================================*/
@@ -571,6 +591,9 @@ h4 {
     .title {
         padding: .7rem;
     }
+
+/* ========     large sobre section   ======== */
+
     .container-sobre {
         display: flex;
         flex-direction: row;
@@ -598,6 +621,8 @@ h4 {
         margin: 2rem;
         width: 40%;
     }
+
+/* ========     large especialidades section    ======== */
 
     .content-container-especialidades {
         display: flex;
@@ -675,6 +700,8 @@ h4 {
     .card:focus::after  {
         transform: scale(1, 1);
     }
+
+/* ======== large contato section   ======== */
 
     .content-container-info {
         width: 100%;

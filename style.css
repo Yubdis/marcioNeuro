@@ -31,7 +31,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4em;
+    scroll-padding-top: 3.5em;
 }
 
 body {
@@ -707,7 +707,7 @@ h4 {
     .content-container-info {
         width: 100%;
         display: flex;
-        justify-content: space-around;   
+        justify-content: space-evenly;  
     }
 
     .content-container-contact-info {
@@ -724,11 +724,20 @@ h4 {
     }
 
     .content-container-email-form {
+        display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-grow: 1;
-    
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0;
+        font-weight: 300;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        flex-grow: 1;
     }
 
     /*  ========    large footer    ========     */
@@ -743,8 +752,8 @@ h4 {
     .footer-address {
         display: flex;
         flex-grow: 1;
-        justify-content: space-around;
-        align-items: left;
+        justify-content: center;
+        align-items: center;
         width: 100%
     }
     

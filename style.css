@@ -588,8 +588,25 @@ h4 {
 /* ========================================
                 Parkinson page
 ===========================================*/
-.alzheimers-sect{
+.parkinson-sect{
+    
+    margin-top: 6rem;
+    font-family: var(--ff-PT-);
+    font-size: 1.3rem;
+    
+    background-image: url(pictures/parkinsons2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--primary-clr);
+    background-blend-mode: multiply;
+}
 
+.parkinson-info {
+    max-width: 75ch;
+    line-height: 1.6rem;
+    color: whitesmoke;
+    font-weight: 500;
+       
 }
 /* ========================================
                 Alzheimer page

@@ -641,7 +641,23 @@ h2 .parkinson {
                 Alzheimer page
 ===========================================*/
 .alzheimers-sect {
+    margin-top: 6rem;
+    font-family: var(--ff-PT-);
+    font-size: 1.3rem;
+    background-image: url(pictures/alzheimers2.jpeg);
+    background-repeat: no-repeat;
+    background-color: var(--primary-clr);
+    background-size:100vw;
+    background-blend-mode: soft-light;
+    background-position: center;
+}
 
+.alzheimers-info {
+    max-width: 75ch;
+    line-height: 1.6rem;
+    padding: 3rem;
+    color: whitesmoke;
+    font-weight: 500;
 }
 /* ========================================
                 Botulinica page

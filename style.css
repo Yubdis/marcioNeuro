@@ -615,7 +615,8 @@ h2 .parkinson {
 }
 
 .video-sect {
-    background-color: var(--primary-clr);
+    background-image: var(--bg-gradient-clr);
+    background-size: 300%;
     padding: .7rem;
     font-family: var(--ff-PT-);
 }
@@ -642,12 +643,10 @@ h2 .parkinson {
     margin-top: 6rem;
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
-    background-image: url(pictures/alzheimers2.jpeg);
-    background-repeat: no-repeat;
-    background-color: var(--primary-clr);
-    background-size:100vw;
-    background-blend-mode: soft-light;
-    background-position: center;
+    /* background-image: url(pictures/alzheimers2.jpeg); */
+    background-image: var(--bg-gradient-clr);
+    background-size:300%;
+    background-position: left;
 }
 
 .alzheimers-info {

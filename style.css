@@ -597,8 +597,7 @@ h4 {
     background-image: url(pictures/parkinsons2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--primary-clr);
-    background-blend-mode: multiply;
+    background-blend-mode:multiply;
     background-position: center;
 }
 
@@ -611,7 +610,6 @@ h2 .parkinson {
     max-width: 75ch;
     line-height: 1.6rem;
     padding: 3rem;
-    color: whitesmoke;
     font-weight: 500;
        
 }
@@ -635,7 +633,7 @@ h2 .parkinson {
 .bibliografia {
     font-family: var(--ff-PT-);
     font-size: .8rem;
-    max-width: 75ch;
+    max-width: 80%;
 }
 /* ========================================
                 Alzheimer page
@@ -663,7 +661,19 @@ h2 .parkinson {
                 Botulinica page
 ===========================================*/
 .botulinica-sect {
+    margin-top: 6rem;
+    font-family: var(--ff-PT-);
+    font-size: 1.3rem;
+    background-image: url(pictures/botox3.jpeg);
+    background-repeat: no-repeat;
+    background-color: var(--primary-clr);
+    background-size: cover;
+    background-blend-mode:multiply;
+}
 
+.botu-info {
+    color: whitesmoke;
+    max-width: 75ch;
 }
 
 /*  =======================================

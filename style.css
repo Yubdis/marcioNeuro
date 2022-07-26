@@ -593,20 +593,49 @@ h4 {
     margin-top: 6rem;
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
-    
+    background-color: var(--primary-clr);
     background-image: url(pictures/parkinsons2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--primary-clr);
     background-blend-mode: multiply;
+    background-position: center;
 }
+
+/* need to fix this 
+h2 .parkinson {
+    text-align: center;
+}*/
 
 .parkinson-info {
     max-width: 75ch;
     line-height: 1.6rem;
+    padding: 3rem;
     color: whitesmoke;
     font-weight: 500;
        
+}
+
+.video-sect {
+    background-color: var(--primary-clr);
+    padding: .7rem;
+    font-family: var(--ff-PT-);
+}
+
+.video{
+
+}
+
+.bibliografia-sect {
+    color: black;
+    background-color: lightblue;
+    
+}
+
+.bibliografia {
+    font-family: var(--ff-PT-);
+    font-size: .8rem;
+    max-width: 75ch;
 }
 /* ========================================
                 Alzheimer page

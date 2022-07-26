@@ -291,8 +291,6 @@ img {
 
 .home-sect {
     background-color: var(--primary-clr);
-    /* background-image: url(pictures/bgroom.jpeg); */
-    background-size: cover;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     padding: 2rem;
@@ -444,13 +442,18 @@ div a:focus {
     width: 100%;
     left: 0;
     text-align: center;
+    background-image: url(pictures/bgroom.jpeg);
+    background-color: var(--primary-clr);
+    background-blend-mode:lighten;
+    background-size: cover;
 }
 
 .content-container-info {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    color: var(--secondary-clr);
+    color: whitesmoke;
+    font-weight: 600;
     
 }
 .content-container-contact-info {
@@ -461,14 +464,14 @@ div a:focus {
     text-align: left;
     padding: 0.5rem;
     margin-left: 2rem;
-    color:  var(--accent-clr-prp);
+    color:  var(--accent-clr-ylw);
     flex-grow: 1;
     flex-shrink: 1.5;
     width: 40%;
 }
 
 .content-container-contact-info a {
-    color: var(--accent-clr-prp);
+    color: var(--accent-clr-ylw);
 }
 
 .content-container-email-form {
@@ -479,7 +482,7 @@ div a:focus {
     margin-bottom: 0;
 }
 .form-header {
-    color: darkorchid;
+    color: rgb(17, 50, 217);
     margin: .5rem;
     font-weight: 700;
     font-size: 1.5rem;
@@ -513,12 +516,14 @@ textarea {
     width: 100%;
     left: 0;
     text-align: center;
+    background-color: lightblue;
 }
 
 .content-container-map {
     width: 80%;
     color: black;
     margin-bottom: 1rem;
+    
 }
 
 .alzheimers-sect {
@@ -817,7 +822,6 @@ h2 .parkinson {
         text-align: left;
         padding: 0.5rem;
         margin-left: 1.6rem;
-        color:  var(--accent-clr-prp);
         flex-grow: 1;
         width: 30%;
     }

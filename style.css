@@ -249,7 +249,7 @@ button:focus {
 }
 
 .title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 img {
@@ -259,7 +259,6 @@ img {
 
 .banner {
     max-width: 100%;
-
 }
 
 .profile-pic {
@@ -294,6 +293,7 @@ img {
     background-color: var(--primary-clr);
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    height: 90vh;
     padding: 2rem;
     margin-top: 0;
 }
@@ -443,6 +443,7 @@ div a:focus {
     width: 100%;
     left: 0;
     text-align: center;
+    background-color: #19b067;
 }
 
 .content-container-info {

@@ -442,10 +442,6 @@ div a:focus {
     width: 100%;
     left: 0;
     text-align: center;
-    background-image: url(pictures/bgroom.jpeg);
-    background-color: var(--primary-clr);
-    background-blend-mode:lighten;
-    background-size: cover;
 }
 
 .content-container-info {
@@ -598,24 +594,26 @@ h4 {
     margin-top: 6rem;
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
+    height: 100vh;
     background-color: var(--primary-clr);
     background-image: url(pictures/parkinsons2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode:multiply;
     background-position: center;
+    background-blend-mode:hard-light;
 }
 
-/* need to fix this 
-h2 .parkinson {
-    text-align: center;
-}*/
-
+.text-sect {
+    background-color:#20ca78;
+}
 .parkinson-info {
     max-width: 75ch;
     line-height: 1.6rem;
     padding: 3rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    
        
 }
 

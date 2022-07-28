@@ -296,6 +296,11 @@ img {
     height: 90vh;
     padding: 2rem;
     margin-top: 0;
+    background-image: url(pictures/bgdesk.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
 }
 
 
@@ -677,7 +682,16 @@ h4 {
 
 @media screen and (min-width: 640px) {
     .home-sect {
-        justify-content: space-around;
+        background-color: var(--primary-clr);
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        height: 90vh;
+        padding: 2rem;
+        margin-top: 0;
+        background-image: url(pictures/bgdeskbanner.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .content-container-image {

@@ -415,15 +415,22 @@ img {
 .pesquisa-sect {
     color: var(--secondary-clr);
     text-align: left;
+    background-image: url(/pictures/stethoscope.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #19b067;
+    background-blend-mode: lighten;
 }
 
 .artigos {
     margin: 2rem;
+    color: black;
 }
 
 div a {
     text-decoration: none;
-    color: var(--secondary-clr)
+    color: black;
+    font-weight: 600;
 }
 
 div li {

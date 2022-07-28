@@ -598,7 +598,7 @@ h4 {
     font-size: 1.3rem;
     height: 90vh;
     background-color: var(--primary-clr);
-    background-image: url(pictures/parkinsons2.jpeg);
+    background-image: url(pictures/parkinsonsbanner2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -858,5 +858,46 @@ h4 {
         align-items: flex-start;
         flex-shrink: 2;
     }
+    /* ========     large parkinson page    ======== */
+    
+    .parkinson-sect{
+    
+        margin-top: 6rem;
+        font-family: var(--ff-PT-);
+        font-size: 1.3rem;
+        height: 90vh;
+        background-color: var(--primary-clr);
+        background-image: url(pictures/parkinsonsbanner.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode:hard-light;
+    }
+    /* ========     large botulinica page   ======== */
+    
+    .botulinica-sect {
+        margin-top: 6rem;
+        font-family: var(--ff-PT-);
+        font-size: 1.3rem;
+        height: 90vh;
+        background-image: url(pictures/botoxbanner.jpeg);
+        background-repeat: no-repeat;
+        background-color: var(--primary-clr);
+        background-size: cover;
+        background-position: bottom center;
+        background-blend-mode:hard-light;
+    }
+    /* ========     large alzheimer page    ======== */
 
+    .alzheimers-sect {
+        margin-top: 6rem;
+        font-family: var(--ff-PT-);
+        font-size: 1.3rem;
+        height: 90vh;
+        background-image: url(pictures/alzheimersbanner.jpeg);
+        background-size:cover;
+        background-position: bottom center;
+        background-color: var(--primary-clr);
+        background-blend-mode: hard-light;
+    }
 }

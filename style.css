@@ -298,8 +298,8 @@ img {
     margin-top: 0;
     background-image: url(pictures/bgdesk.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-position: center left;
     background-blend-mode: hard-light;
 }
 
@@ -527,13 +527,14 @@ textarea {
     width: 100%;
     left: 0;
     text-align: center;
-    background-color: lightblue;
+    background-color: white;
 }
 
 .content-container-map {
     width: 80%;
     color: black;
     margin-bottom: 1rem;
+    border: 5px solid orange;
     
 }
 
@@ -620,7 +621,7 @@ h4 {
 }
 
 .text-sect {
-    background-color:#20ca78;
+    background-color: white;
 }
 .text-info {
     max-width: 75ch;
@@ -646,14 +647,14 @@ h4 {
 
 .bibliografia-sect {
     color: black;
-    background-color: lightblue;
+    background-color: white;
     
 }
 
 .bibliografia {
     font-family: var(--ff-PT-);
     font-size: .8rem;
-    max-width: 80%;
+    max-width: 100ch;
 }
 /* ========================================
                 Alzheimer page

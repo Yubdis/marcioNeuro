@@ -45,7 +45,7 @@ body {
 }
 
 /*  =======================================================
-begin nav bar 
+                    begin nav bar 
 ======================================================= */
 
 header {
@@ -347,6 +347,7 @@ img {
 }
 
 /* ========     especialidades section      ======== */
+
 .especialidades-sect {
     background-image: var(--bg-gradient-clr);
     background-size: 400%;
@@ -603,6 +604,7 @@ h4 {
 /* ========================================
                 Parkinson page
 ===========================================*/
+
 .parkinson-sect{
     
     margin-top: 6rem;
@@ -638,9 +640,9 @@ h4 {
     font-family: var(--ff-PT-);
 }
 
-.video{
-
-}
+/* .video{
+    need to see what Marcio wants for video's
+} */
 
 .bibliografia-sect {
     color: black;
@@ -656,6 +658,7 @@ h4 {
 /* ========================================
                 Alzheimer page
 ===========================================*/
+
 .alzheimers-sect {
     margin-top: 6rem;
     font-family: var(--ff-PT-);
@@ -670,6 +673,7 @@ h4 {
 /* ========================================
                 Botulinica page
 ===========================================*/
+
 .botulinica-sect {
     margin-top: 6rem;
     font-family: var(--ff-PT-);
@@ -856,6 +860,7 @@ h4 {
     }
 
     /*  ========    large footer    ========     */
+    
     .footer-container {
         display: flex;
         flex-direction: row;

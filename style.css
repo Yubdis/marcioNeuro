@@ -533,8 +533,10 @@ textarea {
 .content-container-map {
     width: 80%;
     color: black;
-    margin-bottom: 1rem;
-    border: 5px solid orange;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 1.5rem;
+    border-color: var(--primary-clr) var(--secondary-clr) var(--secondary-clr) var(--primary-clr);
     
 }
 
@@ -579,8 +581,10 @@ footer {
 }
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     margin: .2rem;
     font-size: 3rem;
     width: 100%;
@@ -630,7 +634,7 @@ h4 {
     font-size: 1.2rem;
     font-weight: 600;
     color: darkblue;
-    
+    text-indent: 4rem;
        
 }
 
@@ -654,7 +658,8 @@ h4 {
 .bibliografia {
     font-family: var(--ff-PT-);
     font-size: .8rem;
-    max-width: 100ch;
+    max-width: 115ch;
+    padding: .5rem 2rem;
 }
 /* ========================================
                 Alzheimer page
@@ -879,10 +884,10 @@ h4 {
     }
     
     .footer-links {
+        display: flex;
         margin: .2rem;
-        font-size: 2.3rem;
-        justify-content: space-around;
-        align-items: flex-start;
+        font-size: 3rem;
+        align-items: center;
         flex-shrink: 2;
     }
     /* ========     large parkinson page    ======== */

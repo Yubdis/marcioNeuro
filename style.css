@@ -16,6 +16,7 @@
     --secondary-clr: #fe5c2b;
     --accent-clr-prp: #572af5;
     --accent-clr-ylw: #fcf22e;
+    --accent-clr-wht: #f4f1ec;
     --bg-gradient-clr: linear-gradient(
         130deg,
         #01783f,
@@ -49,17 +50,28 @@ body {
 ======================================================= */
 
 header {
-    text-align: center;
+    display: flex;
     background-color: var(--primary-clr);
     color: var(--accent-clr-ylw);
     font-family: var(--ff-PT-);
     position: fixed;
-    padding: 1.2rem;
+    padding: .5rem;
     top:0;
     left:0;
     width: 100%;
     z-index: 10;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+a .banner {
+    display: flex;
+    align-items: flex-end;
+    max-width: 4rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 100%;
+    
 }
 
 .nav-toggle {
@@ -81,7 +93,7 @@ header {
 .nav-toggle-label span::after {
     display: block;
     background: var(--secondary-clr);
-    height: 2px;
+    height: 3px;
     width: 2em;
     border-radius: 2px;
     position: relative;
@@ -116,6 +128,7 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-top: 3rem;
 }
 
 nav li {
@@ -132,7 +145,7 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: var(--accent-clr-wht);
 }
 
 .nav-toggle:checked ~ nav {
@@ -158,7 +171,7 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(450, 2fr) 2fr;
+        grid-template-columns: auto auto minmax(450, 2fr) 2fr;
         margin-top: 0;
         padding: .5rem;
     }
@@ -176,6 +189,16 @@ nav a:hover {
         position: relative;
         padding-right: .1rem;
         margin-right: .3rem;
+    }
+    
+    a .banner {
+        display: flex;
+        align-items: flex-start;
+        max-width: 4rem;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 0;
     }
 
     nav a::before {
@@ -198,6 +221,7 @@ nav a:hover {
 
     nav ul {
         display: flex;
+        margin: 0;
     }
 
     nav li {
@@ -248,21 +272,9 @@ button:focus {
     transition: 350ms;
 }
 
-.title {
-    font-size: 1.6rem;
-}
-
-img {
-    max-width: 75%;
-    min-width: 150px;
-}
-
-.banner {
-    max-width: 100%;
-}
 
 .profile-pic {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .header-container {
@@ -281,7 +293,7 @@ img {
 
 .content-container {
     padding: 1.5rem;
-    color: whitesmoke;
+    color: var(--accent-clr-wht);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,17 +302,31 @@ img {
 /* ========     home section    ======== */
 
 .home-sect {
+    display: block;
     background-color: var(--primary-clr);
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     height: 90vh;
     padding: 2rem;
-    margin-top: 0;
+    margin-top: 3rem;
     background-image: url(pictures/bgdesk.jpeg);
     background-size: cover;
-    /* background-repeat: no-repeat; */
     background-position: center left;
     background-blend-mode: hard-light;
+}
+
+.title {
+    padding: .7rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.subtitle {
+    padding: .7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
 }
 
 
@@ -330,7 +356,7 @@ img {
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
-    color: whitesmoke;
+    color: var(--accent-clr-wht);
     font-weight: 500;
     padding: 2rem;
     margin: 2rem;
@@ -344,6 +370,10 @@ img {
     align-items: center;
     margin: 1rem;
     width: 65%;
+}
+.content-image img {
+    max-width: 75%;
+    min-width: 15rem;
 }
 
 /* ========     especialidades section      ======== */
@@ -380,7 +410,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: whitesmoke;
+    color: var(--accent-clr-wht);
     opacity: 1;
 }
 
@@ -401,14 +431,14 @@ img {
 }
 
 .card::before {
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid var(--accent-clr-wht);
+    border-bottom: 1px solid var(--accent-clr-wht);
 }
 
 
 .card::after {
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
+    border-left: 1px solid var(--accent-clr-wht);
+    border-right: 1px solid var(--accent-clr-wht);
 }
 
 /* ========     pesquisa section    ======== */
@@ -463,7 +493,7 @@ div a:focus {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    color: whitesmoke;
+    color: var(--accent-clr-wht);
     font-weight: 600;
     
 }
@@ -503,10 +533,11 @@ div a:focus {
     border-radius: 5px;
     margin: .3rem;
     padding: .2rem;
-    color: whitesmoke;
-    font-weight: 600;
+    color: var(--accent-clr-wht);
+    font-weight: 500;
     width: 80px;
     background-color: var(--accent-clr-prp);
+    font-family: var(--ff-PT-);
 }
 
 input {
@@ -527,7 +558,7 @@ textarea {
     width: 100%;
     left: 0;
     text-align: center;
-    background-color: white;
+    background-color: var(--accent-clr-wht);
 }
 
 .content-container-map {
@@ -625,7 +656,7 @@ h4 {
 }
 
 .text-sect {
-    background-color: white;
+    background-color: var(--accent-clr-wht);
 }
 .text-info {
     max-width: 75ch;
@@ -651,7 +682,7 @@ h4 {
 
 .bibliografia-sect {
     color: black;
-    background-color: white;
+    background-color: whvar(--accent-clr-wht)ite;
     
 }
 
@@ -699,16 +730,16 @@ h4 {
 
 @media screen and (min-width: 640px) {
     .home-sect {
+        display: block;
+        flex-direction: row;
         background-color: var(--primary-clr);
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         height: 90vh;
         padding: 2rem;
-        margin-top: 0;
-        background-image: url(pictures/bgdeskbanner.jpeg);
+        background-image: url(pictures/bgdesk.jpeg);
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-position: center left;
+        background-blend-mode: hard-light;
     }
 
     .content-container-image {
@@ -717,6 +748,14 @@ h4 {
 
     .title {
         padding: .7rem;
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        padding: .7rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
     }
 
 /* ========     large sobre section   ======== */
@@ -734,8 +773,8 @@ h4 {
         justify-content: space-around;
         align-items: flex-start;
         text-align: left;
-        color: whitesmoke;
-        font-size: 1.1rem;
+        color: var(--accent-clr-wht);
+        font-size: 1.3rem;
         padding: 2rem;
         max-width: 70ch;
     }
@@ -745,8 +784,13 @@ h4 {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        margin: 2rem;
         padding: 2rem;
+        
+    }
+
+    .content-image img {
+        max-width: 75%;
+        min-width: 15rem;
     }
 
 /* ========     large especialidades section    ======== */
@@ -776,7 +820,7 @@ h4 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: whitesmoke;
+        color: var(--accent-clr-wht);
         opacity: 0;
         transition: opacity ease-out 350ms;
     }
@@ -808,8 +852,8 @@ h4 {
     .card::before {
         transform: scale(0, 1);
         transition: transform ease-out 300ms;
-        border-top: 1px solid whitesmoke;
-        border-bottom: 1px solid whitesmoke;
+        border-top: 1px solid var(--accent-clr-wht);
+        border-bottom: 1px solid var(--accent-clr-wht);
     }
     
     .card:hover::before {
@@ -819,8 +863,8 @@ h4 {
     .card::after {
         transform: scale(1, 0);
         transition: transform ease-out 300ms;
-        border-left: 1px solid whitesmoke;
-        border-right: 1px solid whitesmoke;
+        border-left: 1px solid var(--accent-clr-wht);
+        border-right: 1px solid var(--accent-clr-wht);
     }
     
     .card:hover::after,

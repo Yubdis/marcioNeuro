@@ -10,8 +10,8 @@
 
     <body>
         <header>           
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <a href="#home"><img class="banner" src="pictures/marcioNeurojpg.jpg"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav id="nav-bar" class="nav-bar">
                 <ul class="nav-section">
                     <li><a href="#about">Sobre</</li>
@@ -30,9 +30,11 @@
 
         <main>
             <section id="home" class="home-sect">
-                <h1 class="title">MARCIO SCHNEIDER MEDEIROS<BR>Neurologista Clinico</h1>
-                <p class="subtitle">CRM 32957</p>
-        
+                <div class="headings">
+                    <h1 class="title">MARCIO SCHNEIDER MEDEIROS</h1>
+                    <p class="subtitle-title">Neurologista Clínico</p>
+                    <p class="subtitle">CRM 32957</p>
+                </div>
                 
             </section>
 
@@ -119,14 +121,21 @@
                     <div class="artigos">
                         <h3>Artigos Cientificos</h3>
                         <ul>
+                            <li><a href="https://www.nature.com/articles/tpj201337" target="_blank">
+                                Association of common genetic variants of HOMER1 gene with levodopa adverse effects in Parkinson’s disease patients</a></li> 
                             <li><a href="https://www.futuremedicine.com/doi/abs/10.2217/pgs.15.23" target="_blank">
                                 Is there a role for ADORA2A polymorphisms in levodopa-induced dyskinesia in Parkinson's disease patients?</a></li> 
-                            <li><a href="https://link.springer.com/article/10.1186/s12940-020-00624-8" target="_blank">
-                                Occupational pesticide exposure and the risk of death in patients with Parkinson’s disease: an observational study in southern Brazil</a></li>   
+                            <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0146129" target="_blank">
+                                Iron and Oxidative Stress in Parkinson’s Disease: An Observational Study of Injury Biomarkers</a></li> 
+                            <li><a href="https://pesquisa.bvsalud.org/portal/resource/pt/biblio-831611" target="_blank">
+                                Quality of life (QOL) in Parkinson´s disease: the PDQ-39 evaluates QV in disfagic individuals?</a></li> 
+                            <li><a href="https://www.scielo.br/j/anp/a/PFqt6PvqcBbWCLRxdtbyn7G/?lang=en" target="_blank">
+                                Validation of 19-items wearing-off (WOQ-19) questionnaire to Portuguese</a></li>   
+                            <li><a href="https://ehjournal.biomedcentral.com/articles/10.1186/s12940-020-00624-8" target="_blank">
+                                Occupational pesticide exposure and the risk of death in patients with Parkinson’s disease: an observational study in
+                                southern Brazil</a> </li>   
                             <li><a href="https://www.frontiersin.org/articles/10.3389/fneur.2021.619535/full" target="_blank">
-                                A Case–Control Study of the Effects of Chimarrão (Ilex paraguariensis) and Coffee on Parkinson's Disease</a> </li>   
-                            <li><a href="https://www.karger.com/Article/Abstract/510518 target="_blank">
-                                SMART Syndrome Identification and Successful Treatment</a> </li>   
+                                A Case-Control Study of the Effects of Chimarrão ( Ilex paraguariensis) and Coffee on Parkinson's Disease</a> </li>   
                         </ul>
                     </div>
                     <div class="cv">
@@ -149,15 +158,13 @@
                         <a href="tel:5133325983"><i class="fi fi-sr-phone-call"> (51) 3332-5983</i></a>
                     </div>
                     <div class="content-container-email-form">
-                            <p class="email-form">Horário:<br>Quarta: 9h-12h<br>
-                            Quinta: 14h-18h</p>
                         <form action="https://formsubmit.co/d0bc3582c7ac9533a7d1492905b1a49f" method="POST">
                             <h3 class="form-header">Para entrar em contato, preencha o formulário.</h3>
                             <input type="text" name="name" id="name" placeholder="Seu Nome*" required>
                             <input type="text" name="email" id="email" placeholder="Seu Email*" required>
                             <input type="hidden" name="_subject" value="New Website message!">
                             <input type="hidden" name="_autoresponse" value="Thank you for your message! I'll respond as soon as I can!">
-                            <textarea name="message" id="message" placeholder="Seu mensagem" rows="6"></textarea>
+                            <textarea name="message" id="message" placeholder="Seu Mensagem" rows="6"></textarea>
                             <button class="form-btn" type="submit">Enviar</button>
                         </form>
                     </div>   

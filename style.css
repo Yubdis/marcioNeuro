@@ -63,9 +63,12 @@ header {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+header a {
+    width: 1.8rem;
+}
+
 a .banner {
     display: flex;
-    width: 100%;
     margin: 0;
     padding: 0;
     position: relative;
@@ -76,7 +79,7 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 4rem;
+    max-width: 6rem;
     left: 100%;
 }
 
@@ -182,6 +185,9 @@ nav a:hover {
         padding: .5rem;
     }
 
+    header a {
+        width: 1rem;
+    }
     nav {
         all: unset;
         grid-column: 2;
@@ -200,7 +206,6 @@ nav a:hover {
     a .banner {
         display: flex;
         align-items: flex-start;
-        max-width: 4rem;
         margin: 0;
         padding: 0;
         position: relative;
@@ -254,6 +259,9 @@ section {
     height: auto;
 }
 
+.logo {
+    opacity: .5;
+}
 div {
     margin: 0;
     padding: 0;
@@ -316,27 +324,50 @@ button:focus {
     margin-top: 3rem;
     background-image: url(pictures/bgdesk.jpeg);
     background-size: cover;
-    background-position: center left;
+    background-position: bottom right;
     background-blend-mode: hard-light;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    margin-left: 4rem;
 }
 
 .title {
     padding: .7rem;
     margin-bottom: 0;
+    font-size: 3rem;
+    line-height: 1.8;
+    margin: 0;
+    color: var(--accent-clr-wht);
+}
+
+.subtitle-title {
+    padding: .7rem;
+    margin-bottom: 0;
     font-size: 2rem;
     line-height: 1.8;
     margin: 0;
+    color: var(--accent-clr-wht);
+    font-family: var(--ff-PT-);
 }
 
 .subtitle {
     padding: .7rem;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 500;
     margin: 0;
+    font-family: var(--ff-PT-);
+    color: var(--accent-clr-wht);
 }
 
 
-/*  ========    about section   ========     */
+/*  ========    sobre section   ========     */
 
 .about-sect {
     background-image: var(--bg-gradient-clr);
@@ -363,6 +394,7 @@ button:focus {
     align-items: flex-start;
     text-align: left;
     color: var(--accent-clr-wht);
+    font-size: 1.1rem;
     font-weight: 500;
     padding: 2rem;
     margin: 2rem;
@@ -385,8 +417,7 @@ button:focus {
 /* ========     especialidades section      ======== */
 
 .especialidades-sect {
-    background-image: var(--bg-gradient-clr);
-    background-size: 400%;
+    background-color: rgba(6, 129, 18, 0.759);
     background-position: center;
     width: 100%;
 }
@@ -395,6 +426,8 @@ button:focus {
     display: block;
     flex-wrap: nowrap;
     flex-direction: row;
+    gap: 1rem;
+    margin: 1rem
 }
 
 .card {
@@ -486,7 +519,7 @@ div a:focus {
     transition: ease-out 75ms;
 }
 
-/* ========     contact section     ======== */
+/* ========     contato section     ======== */
 
 .contact-sect {
     width: 100%;
@@ -498,8 +531,10 @@ div a:focus {
 .content-container-info {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    color: var(--accent-clr-wht);
+    align-items: center;
+    color: var(--accent-clr-ylw);
     font-weight: 600;
     
 }
@@ -510,15 +545,14 @@ div a:focus {
     align-items: flex-start;
     text-align: left;
     padding: 0.5rem;
-    margin-left: 2rem;
-    color:  var(--accent-clr-ylw);
+    margin: 2rem;
     flex-grow: 1;
     flex-shrink: 1.5;
-    width: 40%;
 }
 
 .content-container-contact-info a {
-    color: var(--accent-clr-ylw);
+    color: var(--accent-clr-wht);
+    font-size: 1.2rem;
 }
 
 .content-container-email-form {
@@ -558,7 +592,7 @@ textarea {
     padding: .2rem .5rem;
 }
 
-/* ========     map section     ======== */
+/* ========     endereco section     ======== */
 
 .map-sect {
     width: 100%;
@@ -709,7 +743,7 @@ h4 {
     height: 90vh;
     background-image: url(pictures/alzheimers2.jpeg);
     background-size:cover;
-    background-position: bottom center;
+    background-position: top center;
     background-color: var(--primary-clr);
     background-blend-mode: hard-light;
 }
@@ -749,7 +783,7 @@ h4 {
         padding: 2rem;
         background-image: url(pictures/bgdesk.jpeg);
         background-size: cover;
-        background-position: center left;
+        background-position: top center;
         background-blend-mode: hard-light;
     }
 
@@ -787,7 +821,8 @@ h4 {
         color: var(--accent-clr-wht);
         font-size: 1.3rem;
         padding: 2rem;
-        max-width: 70ch;
+        margin-left: 4rem;
+        max-width: 80ch;
     }
     
     .content-image {
@@ -888,7 +923,18 @@ h4 {
     .content-container-info {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;  
+        justify-content: space-around;  
+    }
+    
+    .content-container-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        color: var(--accent-clr-ylw);
+        font-weight: 600;
+
     }
 
     .content-container-contact-info {
@@ -898,16 +944,29 @@ h4 {
         align-items: flex-start;
         text-align: left;
         padding: 0.5rem;
-        margin-left: 1.6rem;
+        margin: 2rem;
         flex-grow: 1;
-        width: 30%;
+        flex-shrink: 1.5;
+    }
+
+    .content-container-contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+        gap: 2rem;
+        margin-left: 3rem;
+        flex-grow: 1;
     }
 
     .content-container-email-form {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         flex-grow: 1;
+        margin-right: 2rem;
     }
     form {
         display: flex;
@@ -917,7 +976,7 @@ h4 {
         font-weight: 500;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         flex-grow: 1;
-        max-width: 70ch;
+        max-width: 80ch;
     }
 
     /*  ========    large footer    ========     */
@@ -957,7 +1016,7 @@ h4 {
         background-image: url(pictures/parkinsonsbanner.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top center;
         background-blend-mode:hard-light;
     }
     /* ========     large botulinica page   ======== */
@@ -983,7 +1042,7 @@ h4 {
         height: 90vh;
         background-image: url(pictures/alzheimersbanner.jpeg);
         background-size:cover;
-        background-position: bottom center;
+        background-position: top center;
         background-color: var(--primary-clr);
         background-blend-mode: hard-light;
     }

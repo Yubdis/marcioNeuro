@@ -712,13 +712,17 @@ h4 {
 .video-sect {
     background-image: var(--bg-gradient-clr);
     background-size: 300%;
-    padding: .7rem;
     font-family: var(--ff-PT-);
 }
 
-/* .video{
-    need to see what Marcio wants for video's
-} */
+.videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
 
 .bibliografia-sect {
     color: black;
@@ -1046,4 +1050,14 @@ h4 {
         background-color: var(--primary-clr);
         background-blend-mode: hard-light;
     }
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
 }

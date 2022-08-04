@@ -75,7 +75,7 @@ a .banner {
     
 }
 
-img {
+.banner {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -316,7 +316,8 @@ button:focus {
 /* ========     home section    ======== */
 
 .home-sect {
-    display: block;
+    display: flex;
+    flex-direction: row;
     background-color: var(--primary-clr);
     justify-content: flex-start;
     height: 90vh;
@@ -334,7 +335,6 @@ button:focus {
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    height: 100%;
     margin-left: 4rem;
 }
 
@@ -787,7 +787,7 @@ h4 {
     }
 
     .home-sect {
-        display: block;
+        display: flex;
         flex-direction: row;
         background-color: var(--primary-clr);
         justify-content: flex-start;

@@ -715,13 +715,21 @@ h4 {
     font-family: var(--ff-PT-);
 }
 
-.videos {
+.video-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
     margin: 1rem;
+}
+.video-item {
+    gap: 1rem;
+    margin: 1rem;
+    border-style: solid;
+    border-width: 1.5rem;
+    border-color: var(--primary-clr) var(--secondary-clr) var(--secondary-clr) var(--primary-clr);
+    
 }
 
 .bibliografia-sect {
@@ -1051,13 +1059,13 @@ h4 {
         background-blend-mode: hard-light;
     }
 
-    .videos {
+    .video-container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        gap: 1rem;
-        margin: 1rem;
+    
     }
 
 }

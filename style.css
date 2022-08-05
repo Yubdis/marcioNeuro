@@ -1102,7 +1102,7 @@ h4 {
     /* ========     large parkinson page    ======== */
     
     /* .parkinson-sect{
-/*     
+     
         margin-top: 6rem;
         font-family: var(--ff-PT-);
         font-size: 1.3rem;
@@ -1112,7 +1112,7 @@ h4 {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
-        background-blend-mode:hard-light; */
+        background-blend-mode:hard-light;
     } */
     /* ========     large botulinica page   ======== */
     
@@ -1126,8 +1126,8 @@ h4 {
         background-color: var(--primary-clr);
         background-size: cover;
         background-position: bottom center;
-        background-blend-mode:hard-light; */
-    } */
+        background-blend-mode:hard-light; 
+     */
     /* ========     large alzheimer page    ======== */
 
     /* .alzheimers-sect {
@@ -1140,7 +1140,7 @@ h4 {
         background-position: top center;
         background-color: var(--primary-clr);
         background-blend-mode: hard-light; */
-    } */
+    
 
     .video-container {
         display: flex;

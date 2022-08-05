@@ -260,9 +260,10 @@ section {
 }
 
 .logo {
-    opacity: .5;
+    content-visibility: hidden;
 }
 div {
+    
     margin: 0;
     padding: 0;
 }
@@ -335,13 +336,13 @@ button:focus {
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    margin-left: 4rem;
+    margin: 1.7rem;
 }
 
 .title {
     padding: .7rem;
     margin-bottom: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.8;
     margin: 0;
     color: var(--accent-clr-wht);
@@ -350,7 +351,7 @@ button:focus {
 .subtitle-title {
     padding: .7rem;
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     margin: 0;
     color: var(--accent-clr-wht);
@@ -710,7 +711,8 @@ h4 {
 }
 
 .video-sect {
-    background-image: var(--bg-gradient-clr);
+    /* background-image: var(--bg-gradient-clr); */
+    background-color: rgba(6, 129, 18, 0.759);
     background-size: 300%;
     font-family: var(--ff-PT-);
 }
@@ -799,19 +801,38 @@ h4 {
         background-blend-mode: hard-light;
     }
 
+    .logo {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+        content-visibility: visible;
+    }
+
     .content-container-image {
         margin-top: 2rem;
+    }
+
+    .headings {
+        margin-left: 3rem;
     }
 
     .title {
         padding: .7rem;
         margin-bottom: 0;
+        font-size: 3rem;
     }
 
     .subtitle {
         padding: .7rem;
-        font-size: 1.2rem;
-        font-weight: 600;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .subtitle-title {
+        font-size: 2rem;
         margin: 0;
     }
 

@@ -32,7 +32,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4.8rem;
+    scroll-padding-top: 7rem;
 }
 
 body {
@@ -68,10 +68,11 @@ header a {
 }
 
 a .banner {
-    display: flex;
+    display:flex;
     margin: 0;
     padding: 0;
     position: relative;
+    
     
 }
 
@@ -124,7 +125,7 @@ a .banner {
 
 nav {
     position: absolute;
-    background-color: #01783fd0;
+    background-color: var(--primary-clr);
     text-align: left;
     width: 100%;
     left: 0;
@@ -137,7 +138,7 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-top: 4.2rem;
+    margin-top: 5rem;
 }
 
 nav li {
@@ -486,7 +487,7 @@ button:focus {
 .pesquisa-sect {
     color: var(--secondary-clr);
     text-align: left;
-    background-image: url(/pictures/stethoscope.jpg);
+    background-image: url(pictures/flippages.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #19b067;
@@ -546,7 +547,8 @@ div a:focus {
     align-items: flex-start;
     text-align: left;
     padding: 0.5rem;
-    margin: 2rem;
+    margin-top: 1rem;
+    gap: 1rem;
     flex-grow: 1;
     flex-shrink: 1.5;
 }
@@ -683,7 +685,8 @@ h4 {
 ===========================================*/
 
 .parkinson-sect{
-    
+    display: flex;
+    justify-content: flex-end;
     margin-top: 6rem;
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
@@ -696,6 +699,49 @@ h4 {
     background-blend-mode:hard-light;
 }
 
+.title-container-park {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.title-logo {
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%;
+}
+
+.watermark {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.title-text-park {
+    color: var(--accent-clr-prp);
+    background-color: var(--accent-clr-wht);
+    margin:0;
+    padding: 3rem;
+}
+
+.title-text {
+    color: var(--accent-clr-wht);
+    margin: 2rem;
+    padding: 2rem;
+}
 .text-sect {
     background-color: var(--accent-clr-wht);
 }
@@ -757,7 +803,7 @@ h4 {
     height: 90vh;
     background-image: url(pictures/alzheimers2.jpeg);
     background-size:cover;
-    background-position: top center;
+    background-position: center;
     background-color: var(--primary-clr);
     background-blend-mode: hard-light;
 }
@@ -778,6 +824,22 @@ h4 {
     background-blend-mode:hard-light;
 }
 
+.title-container-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.title-text-bot {
+    color: var(--accent-clr-prp);
+    background-color: var(--accent-clr-wht);
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
 /*  =======================================
         styling for larger screens 
     =======================================*/
@@ -785,7 +847,7 @@ h4 {
 @media screen and (min-width: 640px) {
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 4.8rem;
+        scroll-padding-top: 7rem;
     }
 
     .home-sect {
@@ -1039,23 +1101,23 @@ h4 {
     }
     /* ========     large parkinson page    ======== */
     
-    .parkinson-sect{
-    
+    /* .parkinson-sect{
+/*     
         margin-top: 6rem;
         font-family: var(--ff-PT-);
         font-size: 1.3rem;
         height: 90vh;
-        background-color: var(--primary-clr);
+        /* background-color: var(--primary-clr);
         background-image: url(pictures/parkinsonsbanner.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
-        background-blend-mode:hard-light;
-    }
+        background-blend-mode:hard-light; */
+    } */
     /* ========     large botulinica page   ======== */
     
-    .botulinica-sect {
-        margin-top: 6rem;
+    /* .botulinica-sect {
+        /* margin-top: 6rem;
         font-family: var(--ff-PT-);
         font-size: 1.3rem;
         height: 90vh;
@@ -1064,12 +1126,12 @@ h4 {
         background-color: var(--primary-clr);
         background-size: cover;
         background-position: bottom center;
-        background-blend-mode:hard-light;
-    }
+        background-blend-mode:hard-light; */
+    } */
     /* ========     large alzheimer page    ======== */
 
-    .alzheimers-sect {
-        margin-top: 6rem;
+    /* .alzheimers-sect {
+        /* margin-top: 6rem;
         font-family: var(--ff-PT-);
         font-size: 1.3rem;
         height: 90vh;
@@ -1077,8 +1139,8 @@ h4 {
         background-size:cover;
         background-position: top center;
         background-color: var(--primary-clr);
-        background-blend-mode: hard-light;
-    }
+        background-blend-mode: hard-light; */
+    } */
 
     .video-container {
         display: flex;

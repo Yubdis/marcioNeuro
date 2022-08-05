@@ -733,6 +733,7 @@ h4 {
 .title-text-park {
     color: var(--accent-clr-prp);
     background-color: var(--accent-clr-wht);
+    font-family: var(--ff-Raleway-);
     margin:0;
     padding: 3rem;
 }

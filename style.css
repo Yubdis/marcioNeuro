@@ -81,7 +81,6 @@ a .banner {
     justify-content: flex-end;
     align-items: center;
     max-width: 6rem;
-    left: 100%;
 }
 
 .nav-toggle {
@@ -91,11 +90,11 @@ a .banner {
 .nav-toggle-label {
     position:absolute;
     top: 0;
-    left: 0; 
+    right: 0; 
     height: 100%;
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .nav-toggle-label span,
@@ -126,12 +125,13 @@ a .banner {
 nav {
     position: absolute;
     background-color: var(--primary-clr);
-    text-align: left;
+    text-align: right;
     width: 100%;
-    left: 0;
+    right: 0;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
+    opacity: .8;
 }
 
 nav ul {
@@ -144,7 +144,7 @@ nav ul {
 nav li {
     margin-top: 1em;
     margin-bottom:1em;
-    margin-left: 1em;
+    margin-right: 1em;
 }
 nav a {
     text-decoration: none;

@@ -1013,20 +1013,28 @@ h4 {
     .card:focus::after  {
         transform: scale(1, 1);
     }
+/* ======== large pesquisa section  ========  */
+
+    .artigos {
+        font-size: 1.3rem;
+    }
+
+    div a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .cv-title {
+        font-size: 1.3rem;
+    }
 
 /* ======== large contato section   ======== */
-
-    .content-container-info {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;  
-    }
     
     .content-container-info {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: center;
         color: var(--accent-clr-ylw);
         font-weight: 600;
@@ -1036,25 +1044,15 @@ h4 {
     .content-container-contact-info {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        text-align: left;
-        padding: 0.5rem;
-        margin: 2rem;
-        flex-grow: 1;
-        flex-shrink: 1.5;
-    }
-
-    .content-container-contact-info {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         text-align: left;
         padding: 0;
+        margin: 0;
         gap: 2rem;
-        margin-left: 3rem;
+        margin: 3.4rem;
         flex-grow: 1;
+        width: 40%;
     }
 
     .content-container-email-form {
@@ -1063,6 +1061,7 @@ h4 {
         align-items: center;
         flex-grow: 1;
         margin-right: 2rem;
+        width: 60%;
     }
     form {
         display: flex;
@@ -1090,7 +1089,7 @@ h4 {
         flex-grow: 1;
         justify-content: center;
         align-items: center;
-        width: 100%
+        width: 60%;
     }
     
     .footer-links {
@@ -1098,7 +1097,10 @@ h4 {
         margin: .2rem;
         font-size: 3rem;
         align-items: center;
-        flex-shrink: 2;
+        flex-grow: 1;
+        width: 40%;
+        height: 100%;
+        flex-shrink: 1;
     }
     /* ========     large parkinson page    ======== */
     

@@ -195,7 +195,7 @@ nav a:hover {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     nav a {
@@ -528,7 +528,7 @@ div a:focus {
     width: 100%;
     left: 0;
     text-align: center;
-    background-color: #19b067;
+    background-color: rgba(6, 129, 18, 0.759);
 }
 
 .content-container-info {

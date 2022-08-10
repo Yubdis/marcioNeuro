@@ -55,7 +55,7 @@ header {
     color: var(--accent-clr-ylw);
     font-family: var(--ff-PT-);
     position: fixed;
-    padding: .5rem;
+    padding: 0;
     top:0;
     left:0;
     width: 100%;
@@ -191,11 +191,11 @@ nav a:hover {
     }
     nav {
         all: unset;
-        grid-column: 2;
+        grid-column: 2 / 3;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 1.1rem;
+        font-size: 1.02rem;
     }
 
     nav a {
@@ -238,7 +238,7 @@ nav a:hover {
     }
 
     nav li {
-        margin-left: 1rem;
+        margin-left: .5rem;
         margin-bottom: 0;
     }
 }
@@ -661,7 +661,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin: .2rem;
-    font-size: 3rem;
+    font-size: 2.4rem;
     width: 100%;
 }
 
@@ -1014,8 +1014,7 @@ h4 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        text-align: left;
+        align-items: left;
         padding: 0;
         margin: 0;
         gap: 2rem;
@@ -1064,7 +1063,7 @@ h4 {
     .footer-links {
         display: flex;
         margin: .2rem;
-        font-size: 3rem;
+        font-size: 2.4rem;
         align-items: center;
         flex-grow: 1;
         width: 40%;

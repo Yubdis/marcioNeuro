@@ -1023,14 +1023,15 @@ h4 {
     .content-container-contact-info {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: left;
+        justify-content: space-around;
+        align-items: center;
         padding: 0;
         margin: 0;
         gap: 2rem;
         margin: 3.4rem;
         flex-grow: 1;
         width: 40%;
+        flex-shrink: 2;
     }
 
     .content-container-email-form {

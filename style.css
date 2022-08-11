@@ -729,6 +729,7 @@ h4 {
     margin: 0;
     padding: 3rem;
 }
+
 .text-sect {
     background-color: var(--accent-clr-wht);
 }
@@ -866,6 +867,15 @@ h4 {
     .subtitle-title {
         font-size: 2rem;
         margin: 0;
+    }
+
+    .title-text {
+        color: var(--accent-clr-prp);
+        background-color: var(--accent-clr-wht);
+        font-family: var(--ff-PT-);
+        font-size: 2.3rem;;
+        margin: 0;
+        padding: 4rem;
     }
 
 /* ========     large sobre section   ======== */

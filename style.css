@@ -821,7 +821,7 @@ h4 {
         styling for larger screens 
     =======================================*/
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 735px) {
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 7rem;

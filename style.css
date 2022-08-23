@@ -91,7 +91,7 @@ a .banner {
     position:absolute;
     top: 0;
     right: 0; 
-    height: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
     margin-right: 1rem;
@@ -170,7 +170,7 @@ nav a:hover {
 /*  ============================================
             navbar for larger screens 
     ============================================*/
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 735px) {
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 3.5rem;
@@ -195,7 +195,7 @@ nav a:hover {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 1.02rem;
+        font-size: 1.1rem;
     }
 
     nav a {

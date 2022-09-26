@@ -373,7 +373,7 @@ button:focus {
 /*  ========    sobre section   ========     */
 
 .about-sect {
-    background-image: var(--bg-gradient-clr);
+    background-color: var(--accent-clr-wht);
     background-size: 400%;
     background-position: left;
     width: 100%;
@@ -396,7 +396,7 @@ button:focus {
     justify-content: space-around;
     align-items: flex-start;
     text-align: left;
-    color: var(--accent-clr-wht);
+    color: var(--accent-clr-prp);
     font-size: 1.1rem;
     font-weight: 500;
     padding: 2rem;
@@ -412,6 +412,7 @@ button:focus {
     margin: 1rem;
     width: 65%;
 }
+
 .content-image img {
     max-width: 75%;
     min-width: 15rem;
@@ -762,7 +763,7 @@ h4 {
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
-    margin: 1rem;
+    margin: 0;
     width: 100%;
 }
 .video-item {
@@ -799,6 +800,12 @@ h4 {
     font-size: .8rem;
     max-width: 115ch;
     padding: .5rem 2rem;
+}
+
+.entrevista-title {
+    margin-top: 2em;
+    padding: 0;
+
 }
 /* ========================================
                 Alzheimer page
@@ -914,7 +921,7 @@ h4 {
         justify-content: space-around;
         align-items: flex-start;
         text-align: left;
-        color: var(--accent-clr-wht);
+        color: var(--accent-clr-prp);
         font-size: 1.5rem;
         padding: 2rem;
         margin-left: 4rem;
@@ -1110,8 +1117,7 @@ h4 {
     }
     /* ========     large parkinson page    ======== */
     
-    /* .parkinson-sect{
-     
+    /* .parkinson-sect {
         margin-top: 6rem;
         font-family: var(--ff-PT-);
         font-size: 1.3rem;
@@ -1123,10 +1129,11 @@ h4 {
         background-position: top center;
         background-blend-mode:hard-light;
     } */
+    
     /* ========     large botulinica page   ======== */
     
     /* .botulinica-sect {
-        /* margin-top: 6rem;
+        margin-top: 6rem;
         font-family: var(--ff-PT-);
         font-size: 1.3rem;
         height: 90vh;
@@ -1140,16 +1147,9 @@ h4 {
     /* ========     large alzheimer page    ======== */
 
     /* .alzheimers-sect {
-        /* margin-top: 6rem;
-        font-family: var(--ff-PT-);
-        font-size: 1.3rem;
-        height: 90vh;
-        background-image: url(pictures/alzheimersbanner.jpeg);
-        background-size:cover;
-        background-position: top center;
-        background-color: var(--primary-clr);
-        background-blend-mode: hard-light; */
-    
+        display: flex;
+        flex-direction: row;
+    } */
 
     .video-container {
         display: flex;

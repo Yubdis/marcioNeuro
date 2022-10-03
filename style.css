@@ -740,6 +740,7 @@ h4 {
 .text-sect {
     background-color: var(--accent-clr-wht);
 }
+
 .text-info {
     max-width: 75ch;
     line-height: 1.6rem;
@@ -747,8 +748,7 @@ h4 {
     font-size: 1.2rem;
     font-weight: 600;
     color: darkblue;
-    text-indent: 4rem;
-       
+    text-indent: 2rem;     
 }
 
 .video-sect {

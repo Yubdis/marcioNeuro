@@ -11,7 +11,12 @@
     <body>
         <header>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <a href="index.html"><img class="banner" src="pictures/marcioNeurojpg.jpg"></a>
+            <a href="index.html">
+                <picture>
+                    <source type="image/avif" srcset="pictures/marcioNeurojpg.avif">
+                    <img class="banner" src="pictures/marcioNeurojpg.jpg" alt="logo">
+                </picture>
+            </a>
             <nav id="nav-bar" class="nav-bar">
                 <ul class="nav-section">
                     <li><a href="#text-sect">Parkinson</a></li>

@@ -562,7 +562,7 @@ div a:focus {
 }
 
 .content-container-contact-info a {
-    color: black;
+    color: darkblue;
     font-size: 1.2rem;
 }
 
@@ -574,7 +574,7 @@ div a:focus {
     margin-bottom: 0;
 }
 .form-header {
-    color: rgb(17, 50, 217);
+    color: darkblue(17, 50, 217);
     margin: .5rem;
     font-weight: 700;
     font-size: 1.5rem;

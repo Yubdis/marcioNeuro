@@ -1043,7 +1043,7 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        color: var(--accent-clr-ylw);
+        color: darkblue;
         font-weight: 600;
 
     }

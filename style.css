@@ -326,7 +326,7 @@ button:focus {
     height: 90vh;
     padding: 2rem;
     margin-top: 3rem;
-    background-image: url(pictures/bgdesk.jpeg);
+    background-image: url(pictures/bgdesk.avif);
     background-size: cover;
     background-position: bottom right;
     background-blend-mode: hard-light;
@@ -489,7 +489,7 @@ button:focus {
 .pesquisa-sect {
     color: var(--secondary-clr);
     text-align: left;
-    background-image: url(pictures/flippages1.jpg);
+    background-image: url(pictures/flippages.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #19b067;
@@ -700,7 +700,7 @@ h4 {
     font-size: 1.3rem;
     height: 90vh;
     background-color: var(--primary-clr);
-    background-image: url(pictures/parkinsonsbanner2.jpeg);
+    background-image: url(pictures/parkinsonsbanner2.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -816,7 +816,7 @@ h4 {
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
     height: 90vh;
-    background-image: url(pictures/alzheimers2.jpeg);
+    background-image: url(pictures/alzheimers2.avif);
     background-size:cover;
     background-position: center;
     background-color: var(--primary-clr);
@@ -831,7 +831,7 @@ h4 {
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
     height: 90vh;
-    background-image: url(pictures/botox3.jpeg);
+    background-image: url(pictures/botox3.avif);
     background-repeat: no-repeat;
     background-color: var(--primary-clr);
     background-size: cover;
@@ -856,7 +856,7 @@ h4 {
         justify-content: flex-start;
         height: 90vh;
         padding: 2rem;
-        background-image: url(pictures/bgdesk.jpeg);
+        background-image: url(pictures/bgdesk.avif);
         background-size: cover;
         background-position: top center;
         background-blend-mode: hard-light;

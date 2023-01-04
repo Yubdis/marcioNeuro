@@ -735,7 +735,7 @@ h4 {
     background-color: var(--accent-clr-wht);
     font-family: var(--ff-PT-);
     margin: 0;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .text-sect {
@@ -792,7 +792,7 @@ h4 {
 
 .bibliografia-sect {
     color: black;
-    background-color: whvar(--accent-clr-wht)ite;
+    background-color: var(--accent-clr-wht);
     
 }
 

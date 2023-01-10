@@ -95,7 +95,7 @@ a .banner {
     height: 90%;
     display: flex;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 2.5rem;
 }
 
 .nav-toggle-label span,
@@ -804,6 +804,7 @@ h4 {
 }
 
 .entrevista-title {
+    text-align: center;
     margin-top: 2em;
     padding: 0;
 

@@ -74,6 +74,7 @@ a .banner {
     padding: 0;
     position: relative;
     width: auto;
+    height: auto;
 }
 
 .banner {

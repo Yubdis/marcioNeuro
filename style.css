@@ -728,6 +728,7 @@ h4 {
 .watermark {
     margin: 1rem;
     padding: 1rem;
+    width: fit-content;
 }
 
 .title-text {

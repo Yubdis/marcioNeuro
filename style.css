@@ -47,7 +47,7 @@ body {
 }
 
 /*  =======================================================
-                    begin nav bar 
+                    begin nav bar
 ======================================================= */
 
 header {
@@ -73,8 +73,8 @@ a .banner {
     margin: 0;
     padding: 0;
     position: relative;
-    
-    
+
+
 }
 
 .banner {
@@ -91,7 +91,7 @@ a .banner {
 .nav-toggle-label {
     position:absolute;
     top: 0;
-    right: 0; 
+    right: 0;
     height: 90%;
     display: flex;
     align-items: center;
@@ -169,7 +169,7 @@ nav a:hover {
 }
 
 /*  ============================================
-            navbar for larger screens 
+            navbar for larger screens
     ============================================*/
 @media screen and (min-width: 735px) {
     html {
@@ -205,7 +205,7 @@ nav a:hover {
         padding-right: .1rem;
         margin-right: .3rem;
     }
-    
+
     a .banner {
         display: flex;
         align-items: flex-start;
@@ -247,14 +247,14 @@ nav a:hover {
 
 
 /*  ==============================================
-                    begin main styling 
+                    begin main styling
     ==============================================  */
 
     /* =====    general styling     ===== */
 
 section {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     left: 0;
@@ -266,7 +266,7 @@ section {
     content-visibility: hidden;
 }
 div {
-    
+
     margin: 0;
     padding: 0;
 }
@@ -327,7 +327,7 @@ button:focus {
     height: 90vh;
     padding: 2rem;
     margin-top: 3rem;
-    background-image: url(pictures/bgdesk.avif);
+    background-image: url(pictures/bgdesk.jpg);
     background-size: cover;
     background-position: bottom right;
     background-blend-mode: hard-light;
@@ -387,7 +387,7 @@ button:focus {
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
-   
+
 }
 
 .content-text {
@@ -490,7 +490,7 @@ button:focus {
 .pesquisa-sect {
     color: var(--secondary-clr);
     text-align: left;
-    background-image: url(pictures/flippages.avif);
+    background-image: url(pictures/flippages.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #19b067;
@@ -541,7 +541,7 @@ div a:focus {
     align-items: center;
     color: darkblue;
     font-weight: 600;
-    
+
 }
 .content-container-contact-info {
     display: flex;
@@ -620,7 +620,7 @@ textarea {
     border-style: solid;
     border-width: 1.5rem;
     border-color: var(--primary-clr) var(--secondary-clr) var(--secondary-clr) var(--primary-clr);
-    
+
 }
 
 .alzheimers-sect {
@@ -628,7 +628,7 @@ textarea {
     margin-top: 7rem;
     scroll-padding-top: 5rem;
     scroll-margin-top: 5rem;
-    
+
 }
 
 /* ========     footer section      ======== */
@@ -687,7 +687,7 @@ h4 {
     margin: .5rem;
     padding: 0;
     font-size: 1.1rem;
-} 
+}
 
 /* ========================================
                 Parkinson page
@@ -701,7 +701,7 @@ h4 {
     font-size: 1.3rem;
     height: 90vh;
     background-color: var(--primary-clr);
-    background-image: url(pictures/parkinsonsbanner2.avif);
+    background-image: url(pictures/parkinsonsbanner2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -749,7 +749,7 @@ h4 {
     font-size: 1.2rem;
     font-weight: 600;
     color: darkblue;
-    text-indent: 2rem;     
+    text-indent: 2rem;
 }
 
 .video-sect {
@@ -793,7 +793,7 @@ h4 {
 .bibliografia-sect {
     color: black;
     background-color: var(--accent-clr-wht);
-    
+
 }
 
 .bibliografia {
@@ -818,7 +818,7 @@ h4 {
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
     height: 90vh;
-    background-image: url(pictures/alzheimers2.avif);
+    background-image: url(pictures/alzheimers2.jpg);
     background-size:cover;
     background-position: center;
     background-color: var(--primary-clr);
@@ -833,7 +833,7 @@ h4 {
     font-family: var(--ff-PT-);
     font-size: 1.3rem;
     height: 90vh;
-    background-image: url(pictures/botox3.avif);
+    background-image: url(pictures/botox3.jpg);
     background-repeat: no-repeat;
     background-color: var(--primary-clr);
     background-size: cover;
@@ -842,7 +842,7 @@ h4 {
 }
 
 /*  =======================================
-        styling for larger screens 
+        styling for larger screens
     =======================================*/
 
 @media screen and (min-width: 735px) {
@@ -858,7 +858,7 @@ h4 {
         justify-content: flex-start;
         height: 90vh;
         padding: 2rem;
-        background-image: url(pictures/bgdesk.avif);
+        background-image: url(pictures/bgdesk.jpg);
         background-size: cover;
         background-position: top center;
         background-blend-mode: hard-light;
@@ -916,7 +916,7 @@ h4 {
         justify-content: space-evenly;
         height: 100%;
     }
-    
+
     .content-text {
         display:flex;
         flex-direction: column;
@@ -929,14 +929,14 @@ h4 {
         margin-left: 4rem;
         max-width: 80ch;
     }
-    
+
     .content-image {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding: 2rem;
-        
+
     }
 
     .content-image img {
@@ -951,12 +951,12 @@ h4 {
         flex-wrap: nowrap;
         justify-content: space-evenly;
     }
-    
+
     .card {
         position: relative;
         margin: .8rem;
         background-color: lightseagreen;
-    
+
     }
 
     .card-image {
@@ -965,7 +965,7 @@ h4 {
         transition: opacity ease-out 350ms;
         opacity: 1;
     }
-    
+
     .card-text {
         position: absolute;
         top: 50%;
@@ -975,20 +975,20 @@ h4 {
         opacity: 0;
         transition: opacity ease-out 350ms;
     }
-    
+
     .card:hover .card-text {
         opacity: 1;
     }
-    
+
     .card-title {
         font-size: 1.5rem;
         margin-bottom: 0;
     }
-    
+
     .card:hover .card-image {
         opacity: 0.4;
     }
-    
+
     .card::before,
     .card::after,
     .card:focus {
@@ -999,25 +999,25 @@ h4 {
         left: 1em;
         right: 1em;
     }
-    
+
     .card::before {
         transform: scale(0, 1);
         transition: transform ease-out 300ms;
         border-top: 1px solid var(--accent-clr-wht);
         border-bottom: 1px solid var(--accent-clr-wht);
     }
-    
+
     .card:hover::before {
         transform: scale(1, 1);
     }
-    
+
     .card::after {
         transform: scale(1, 0);
         transition: transform ease-out 300ms;
         border-left: 1px solid var(--accent-clr-wht);
         border-right: 1px solid var(--accent-clr-wht);
     }
-    
+
     .card:hover::after,
     .card:focus::after  {
         transform: scale(1, 1);
@@ -1038,7 +1038,7 @@ h4 {
     }
 
 /* ======== large contato section   ======== */
-    
+
     .content-container-info {
         width: 100%;
         display: flex;
@@ -1090,7 +1090,7 @@ h4 {
     }
 
     /*  ========    large footer    ========     */
-    
+
     .footer-container {
         display: flex;
         flex-direction: row;
@@ -1098,7 +1098,7 @@ h4 {
         align-items: center;
         width: 100%;
     }
-    
+
     .footer-address {
         display: flex;
         flex-grow: 1;
@@ -1106,7 +1106,7 @@ h4 {
         align-items: center;
         width: 60%;
     }
-    
+
     .footer-links {
         display: flex;
         margin: .2rem;
@@ -1118,7 +1118,7 @@ h4 {
         flex-shrink: 1;
     }
     /* ========     large parkinson page    ======== */
-    
+
     /* .parkinson-sect {
         margin-top: 6rem;
         font-family: var(--ff-PT-);
@@ -1131,9 +1131,9 @@ h4 {
         background-position: top center;
         background-blend-mode:hard-light;
     } */
-    
+
     /* ========     large botulinica page   ======== */
-    
+
     /* .botulinica-sect {
         margin-top: 6rem;
         font-family: var(--ff-PT-);
@@ -1144,7 +1144,7 @@ h4 {
         background-color: var(--primary-clr);
         background-size: cover;
         background-position: bottom center;
-        background-blend-mode:hard-light; 
+        background-blend-mode:hard-light;
      */
     /* ========     large alzheimer page    ======== */
 
@@ -1159,7 +1159,7 @@ h4 {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-    
+
     }
 
 }

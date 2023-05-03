@@ -182,7 +182,7 @@ nav a:hover {
 
     header {
         display: grid;
-        grid-template-columns: auto auto minmax(450, 2fr) 2fr;
+        grid-template-columns: 1fr 2fr;
         margin-top: 0;
         padding: .5rem;
     }

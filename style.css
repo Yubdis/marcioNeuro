@@ -263,7 +263,7 @@ section {
 }
 
 .logo {
-    content-visibility: hidden;
+    display: none;
 }
 div {
 
@@ -870,7 +870,6 @@ h4 {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        content-visibility: visible;
     }
 
     .content-container-image {

@@ -490,7 +490,7 @@ button:focus {
 .pesquisa-sect {
     color: var(--secondary-clr);
     text-align: left;
-    background-image: url(pictures/flippages.avif);
+    background-image: url(pictures/flippages.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #19b067;

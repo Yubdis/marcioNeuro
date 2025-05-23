@@ -327,7 +327,7 @@ button:focus {
     height: 90vh;
     padding: 2rem;
     margin-top: 3rem;
-    background-image: url(pictures/bgdesk.jpg);
+    background-image: url(pictures/bgdesk.avif);
     background-size: cover;
     background-position: bottom right;
     background-blend-mode: hard-light;
